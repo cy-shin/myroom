@@ -16,48 +16,48 @@
     - 현재 구조는 열 트랙 * 3 / 행 트랙 * 2
     - 그리드 트랙(열)의 길이가 200px로 고정됨    
 */
-#grid-container{
-    grid-template-columns: 200px;
-}
+/* #grid-container{
+    grid-template-rows: 200px;
+} */
 
 /* 3. fr(fraction) 단위
     - fr : 그리드 컨테이너에 남아 있는 사용 가능한 공간의 일정 비율
     - 열 트랙의 크기를 2:1:1 비율로 나눔
     - 열 트랙의 첫 번째 트랙의 크기는 500px로 고정하고, 나머지 공간을 1:2 비율로 나눔
 */
-#grid-container{
+/* #grid-container{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-}
+} */
 
 /* fr과 고정 픽셀의 복합 적용 */
-#grid-container{
+/* #grid-container{
     display: grid;
     grid-template-columns: 500px 1fr 2fr;
-}
+} */
 
 /* 4. repaet 사용 
     - 반복 입력하지 않아도 자동으로 반복입력해줌 
     - column 트랙의 길이를 1fr로 지정함 * 3번 반복    
 */
-#grid-container{
+/* #grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 /* 고정 길이와 repeat를 함께 사용 
     - 첫 번째 column 트랙의 길이는 50px, 나머지는 1fr */
-#grid-container{
+/* #grid-container{
     display: grid;
     grid-template-columns: 50px repeat(2, 1fr);
-}
+} */
 
 /* repeat을 이용해서 반복 구조를 만들 수 있음 
     - column 트랙의 길이를 1:2비율로 만듦 * 2번 반복함 -> column이 2개 만들어짐 */
-#grid-container{
+/* #grid-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr 2fr);
-}
+} */
 
 /* 5. 잠재적 그리드? 
     - 명시적 그리드 : grid-template-columns 또는 grid-template-rows로 직접 정의한 그리드 
@@ -68,8 +68,15 @@
 
 /* 6. grid-auto-rows, grid-auto-columns
     - 잠재적 그리드의 트랙 크기를 조절함 */
+/* #grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 200px;
+} */
+
+/* 잠재적 그리드 트랙 크기 조절2 */
 #grid-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-columns: 400px;
+    grid-template-rows: repeat(5, 200px);
 }
