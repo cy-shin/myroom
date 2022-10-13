@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSPPractice_1012</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 	<!-- 500원 동전 교환기 -->
-    <form action="/JSPPractice1012/charge" method="get">
+    <!-- <form action="/JSPPractice1012/charge" method="get">
         금액
         <label>
             10000원 : <input type="number" name="ten" min="0" value="0">
@@ -23,18 +24,27 @@
         </label>
 
         <button>교환하기</button>
-    </form>
+    </form> -->
     <hr>
     <!-- 음료수 자판기 -->
     <form action="/JSPPractice1012/vendingMachine" method="POST">
-        <fieldset>
-            <legend>음료수 자판기</legend>
-            <label><input type="radio" name="beverage" value="sports"> 이온음료(1300원) </label> <br>
-            <label><input type="radio" name="beverage" value="coke"> 콜라(1800원) </label> <br>
-            <label><input type="radio" name="beverage" value="soda"> 사이다(1700원) </label> <br>
-            <label> <input type="radio" name="beverage" value="coffee"> 캔커피(1000원)</label> <br>
-            <label> <input type="radio" name="beverage" value="water"> 생수(500원)</label>
-        </fieldset>
+        <div class="grid-container">
+            <div>이온음료</div>
+            <div>콜라</div>
+            <div>사이다</div>
+            <div>캔커피</div>
+            <div>생수</div>
+            <div>1300원</div>
+            <div>1800원</div>
+            <div>1700원</div>
+            <div>1000원 </div>
+            <div>500원</div>
+            <div id="grid-item1"><input type="radio" class="rd" name="beverage" value="sports"></div>
+            <div id="grid-item2"><input type="radio" class="rd" name="beverage" value="coke">  </div>
+            <div id="grid-item3"><input type="radio" class="rd" name="beverage" value="soda"> </div>
+            <div id="grid-item4"><input type="radio" class="rd" name="beverage" value="coffee"></div>
+            <div id="grid-item5"><input type="radio" class="rd" name="beverage" value="water"></div>
+        </div>
 
         <fieldset>
             <legend>금액</legend>
