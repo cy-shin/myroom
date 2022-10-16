@@ -7,7 +7,6 @@
 		FROM "USER"
 		WHERE USER_ID = ?
 		AND USER_PW = ?
-		
 	</entry>
 
 	
