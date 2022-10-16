@@ -133,10 +133,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/java,eclipse,windows
-JDBC2/driverPrc.xml
-JDBC2/driver.xml
-member_board/driver.xml
-JDBC2/driver.xml
-BookPractice/src/driver.xml
-LibraryManagement/driver.xml
-JSP/JSPPracitce1016/src/main/java/cy/prac/sql/driver.xml
+*.xml
