@@ -8,7 +8,6 @@
 		LEFT JOIN TB_DEPARTMENT USING(DEPARTMENT_NO)
 	</entry>
 
-	
 
 </properties>
 
