@@ -4,7 +4,6 @@ import static prac.cy.common.JDBCTemplate.*;
 
 import java.sql.Connection;
 
-import oracle.jdbc.OracleConnectionStringBuilder.ConnectInfo;
 import prac.cy.main.model.dao.MainDAO;
 import prac.cy.user.vo.User;
 
