@@ -1,0 +1,79 @@
+/* 전체 컨테이너 크기 */
+#container{
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+/* 박스 크기 */
+#container .box{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+/* 색깔 지정 */
+#container > div:nth-child(1){
+    background-color: red;
+}
+#container > div:nth-child(2){
+    background-color: orange;
+}
+#container > div:nth-child(3){
+    background-color: blue
+}
+#container > div:nth-child(4){
+    background-color: black;
+}
+#container > div:nth-child(5){
+    background-color: green;
+}
+#container > div:nth-child(6){
+    background-color: purple;
+}
+
+/* position 테스트 */
+#container > div:nth-child(1){
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#container > div:nth-child(2){
+    position: absolute;
+    bottom: -30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
+    left: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
+}
+
+/* margin-auto를 이용해서 가운데 배치하기 */
+#container > div:nth-child(3){
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* fixed */
+#container > div:nth-child(4){
+    position: absolute;
+    bottom: -30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
+    left: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
+}
+
+
+/* z-index */
+#container > div:nth-child(5){
+    position: absolute;
+    bottom: -30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
+    left: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
+}
+
+#container > div:nth-child(6){
+    position: absolute;
+    bottom: -30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
+    left: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
+}
