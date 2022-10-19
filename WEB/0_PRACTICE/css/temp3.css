@@ -59,21 +59,23 @@
 
 /* fixed */
 #container > div:nth-child(4){
-    position: absolute;
-    bottom: -30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
-    left: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
+    position: fixed;
+    bottom: 30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
+    right: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
 }
-
 
 /* z-index */
 #container > div:nth-child(5){
     position: absolute;
-    bottom: -30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
-    left: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
+    bottom: 100px; 
+    left: 100px; 
+    z-index: 5;
 }
 
 #container > div:nth-child(6){
     position: absolute;
-    bottom: -30px; /* 아래쪽 벽에서 -30px만큼 떨어지기 */
-    left: 50px; /* 오른쪽 벽에서 50px만큼 떨어지기 */
+    bottom: 100px; 
+    left: 100px; 
 }
+/* order값이 같은 요소끼리 겹친 경우, html에서 마지막에 작성한 요소가 위에 배치됨 */
+
