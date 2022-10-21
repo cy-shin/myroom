@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>관리 페이지</title>
 
-    <link rel="stylesheet" href="/bond_admin/admin-main.css">
+    <link rel="stylesheet" href="css/admin-main.css">
 </head>
 <body>
-    <header> header include </header>
+    <header>
+        <section>
+            <!-- 클릭 시 메인으로 이동하는 로고  -->
+            <a href="#">
+                <img src="images/home-logo.png" id="home-logo">
+            </a>
+        </section>
+
+        <section class="profile">
+            <!-- 내 정보 사진 -->
+            <button type="button" class="box">
+                <img src="images/profile-photo.png" id="profile-photo">
+            </button>
+        </section>
+    </header>
 
     
     <main>
@@ -17,7 +31,8 @@
         <aside class="admin-aside">
             <!-- 토글 버튼 -->
             <section class="admin-aside-toggle">
-                <div><&nbsp&nbsp</div>
+                <input type="checkbox" id="aside-toggle" checked>
+
             </section>
             
             <!-- 관리자 정보 -->
@@ -69,7 +84,22 @@
 
     </main>
         
-    footer include
+<footer>
+    <p>
+        BOND &copy; 2022
+    </p>
+
+    <article>
+        <a href="#">블로그</a>
+        <span>|</span>
+        <a href="#">이용약관</a>
+        <span>|</span>
+        <a href="#">개인정보처리방침</a>
+        <span>|</span>
+        <a href="#">고객센터</a>
+    </article>
+
+</footer>
       
 </body>
 </html>

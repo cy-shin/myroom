@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지 | 메인</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <section>
+            <!-- 클릭 시 메인으로 이동하는 로고  -->
+            <a href="#">
+                <img src="images/home-logo.png" id="home-logo">
+            </a>
+        </section>
+
+        <section class="profile">
+            <!-- 내 정보 사진 -->
+            <button type="button" class="box">
+                <img src="images/profile-photo.png" id="profile-photo">
+            </button>
+        </section>
+    </header>
+
+
+    <main>
+        <section class="main">
+            
+            <!-- 사이드 메뉴 -->
+            <!-- 토글 버튼 -->
+            <aside>
+                <label for="aside-toggle">
+                    <div>></div>
+                </label>
+                <input type="checkbox" id="aside-toggle">
+                <!-- 프로필, 밴드로 이동, 로그아웃 -->
+                <section class="admin-profile">
+                    <div class="admin-logo">
+                        <img src="images/profile-photo.png" alt="admin-logo">
+                    </div>
+                    <div class="admin-name">관리자1</div>
+                    <div class="admin-profile-menu">
+                        <a href="#" id="home"><div>밴드 홈</div></a>
+                        <a href="#" id="logout"><div>로그아웃</div></a>
+                    </div>
+                </section>
+            
+                <!-- 메뉴 리스트 -->
+                <nav>
+                    <label for="menu1-toggle">
+                        <div class="topmenu">사용자 관리</div>
+                    </label>
+                    <input type="checkbox" id="menu1-toggle">
+                    <div class="submenu">
+                        <a href="#">사용자 조회</a>
+                        <a href="#">신고 사용자 관리</a>
+                        <a href="#">사용자 메뉴 3</a>
+                    </div>
+
+                    <label for="menu2-toggle">
+                        <div class="topmenu">소모임 관리</div>
+                    </label>
+                    <input type="checkbox" id="menu2-toggle">
+                    <div class="submenu">
+                        <a href="#">소모임 조회</a>
+                        <a href="#">신고 소모임 관리</a>
+                        <a href="#">소모임 메뉴 3</a>
+                    </div>
+                </nav>
+            </aside>
+        
+            <!-- 본문 -->
+            <section class="admin-content"></section>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>
+            BOND &copy; 2022
+        </p>
+
+        <article>
+            <a href="#">블로그</a>
+            <span>|</span>
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보처리방침</a>
+            <span>|</span>
+            <a href="#">고객센터</a>
+        </article>
+
+    </footer>
+    
+</body>
+</html>
