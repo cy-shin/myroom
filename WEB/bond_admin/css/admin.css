@@ -16,7 +16,6 @@ header{
     align-items: center;
     justify-content: space-between;
 
-
 }
 
 #home-logo{
@@ -42,187 +41,246 @@ header{
     cursor: pointer;
 } */
 
+/* admin */
+
 /* main */
 main{ /* main background */
-    background-color: #BFBFBF;
-    
+    background-color: #E2E2E2;
+    min-height: 100vh;
+
     display: flex;
     justify-content: center;
 }
 
-
 .main{ /* main 영역 너비 지정*/
     width: 1140px;
-    height: 100vh;
-    
-    border: 1px solid black;
+    min-height: 500px;
 
+    margin: 20px 0px;
+    
     display: flex;
     justify-content: space-between;
 }
 
+
 /* aside */
 aside{
-    min-width: 20%;
-}
-
-#aside-toggle{
-    display: none;
-}
-#aside-toggle > div{
-    width: 100%;
+    min-width: 240px;
+    min-height: 100%;
     height: 100%;
-    background-color: midnightblue;
 }
 
-/* profile 영역 */
+
+
+/* admin - profile */
 .admin-profile{
     background-color: white;
-    height: 75px;
+    
+    margin-bottom: 20px;
+    border-radius: 7px;
+    /* border-bottom: 3px solid #BFBFBF;  */
+    border: 1px solid #BFBFBF;
+    height: 70px;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
+/* admin - logo */
 .admin-logo{
-    height: 100%;
-    flex-basis: 20%;
+    flex-basis: 25%;
 
-    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.admin-logo > img{
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
+.admin-logo-area{
+    /* background-color: #E2E2E2; */
+
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+
+    overflow: hidden;
+    border: 2px solid black;
 }
 
+#admin-logo-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* admin - name */
 .admin-name{
-    height: 100%;
     flex-basis: 40%;
+    
+    letter-spacing: -2px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.admin-profile-menu{
+
+/* admin - quickmenu */
+.admin-quickmenu{
+    flex-basis: 35%;
+
+    padding: 5px 7px;
+
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.admin-profile-menu > a{
-    text-decoration: none;
+.admin-quickmenu > a{
     color: white;
-    font-size: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -2px;
 
-}
-
-.admin-profile-menu > a > div{
+    border-bottom: 1.5px solid #BFBFBF;
+    border-radius: 4px;
     width: 100%;
-    height: 20px;
+    height: 40%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.admin-profile-menu > #home{
-    background-color: greenyellow;
-    border-radius: 5px;
+.admin-quickmenu > a[id="home"]{
+    background-color: yellowgreen;
+}
+.admin-quickmenu > a[id="home"]:hover{
+    background-color: rgb(137, 184, 45);
+}
+.admin-quickmenu > a[id="home"]:active{
+    border: none;
 }
 
-.admin-profile-menu > #logout{
-    background-color: coral;
-    border-radius: 5px;
+.admin-quickmenu > a[id="logout"]{
+    background-color: lightcoral;
+}
+.admin-quickmenu > a[id="logout"]:hover{
+    background-color: rgb(211, 112, 112);
+}
+.admin-quickmenu > a[id="logout"]:active{
+    border: none;
 }
 
 /* aside - nav */
-nav {
-    font-size: 1vw;
-}
-
 nav a{
-    text-decoration: none;
     color: black;
+    font-size: 12px;
+
+    text-decoration: none;
+
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
 }
 
+nav > label > div{
+    display: flex;
+    justify-content: space-between;
+}
 
-/* topmenu 스타일 */
-nav > label{
+nav > label img{
+    width: 30px;
+    height: 30px;
+}
+
+/* top-menu style */
+
+.top-menu{
+    background-color: white;
+    color: #808080;
+    letter-spacing: -2px;
+
+    margin-top: 7px;
+    margin-bottom: 3px;
+    /* border-bottom: 3px solid #BFBFBF; */
+    border: 1px solid #BFBFBF;
+    padding: 0 20px;
+    border-radius: 7px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
     cursor: pointer;
 }
 
-nav > input[type="checkbox"]{
-    display: none;
+.top-menu:hover{
+    color:black;
+    background-color: #E2E2E2;
+    transform: translate(1px, -1px); 
+    transition: 0.2s;    
+}
+.top-menu:active{
+    transform: translateY(1px);
+    transition: 0.1s;
 }
 
-nav .topmenu{
-    height: 30px;
+nav ul{ list-style: none; }
 
+/* sub-menu style */
+.sub-menu{ 
     background-color: white;
-    border-radius: 5px;
+    letter-spacing: -2px;
 
-    display: flex;
-    justify-content: center;
-
-    margin: 3px 0px;
-
+    margin-bottom: 1px;
+    /* border-bottom: 2px solid #BFBFBF; */
+    border: 1px solid #BFBFBF;
+    border-radius: 7px;
+    height: 35px;
 }
 
-nav .topmenu:hover{
-    border-radius: 5px;
-    background-color: #ddd;
-    transition-duration: 0.1s;
+.sub-menu:hover{
+    background-color: #E2E2E2;
+    transform: translate(1px, -1px);
+    transition: 0.2s;
+}
+.sub-menu:active{
+    transform: translateY(1px);
+    transition: 0.1s;
 }
 
+/* aside - nav - menu toggle */
+input[type="radio"]{ display: none; }
 
-/* submenu 스타일 */
-nav .submenu{
-    border-radius: 5px;
-    background-color: white;
-}
+input[id^="menu"] + ul{ display: none; }
 
-nav > div > a{
-    height: 20px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #BFBFBF;
-}
+input[id^="menu"]:checked + ul{ display: block; }
 
-nav > div > a:hover{
-    border-radius: 5px;
-    background-color: #ddd;
-    transition-duration: 0.1s;
-}
-
-
-/* 토글 메뉴 만들기 */
-nav div{
-    display: flex;
-    flex-direction: column;
-}
-
-nav > input + div{
-    display: none;
-    background-color: color;
-}
-
-nav > input:checked + div{
-    display: flex;
-    flex-direction: column;
-}
-
-/* section : admin-content */
+/* admin-content */
 .admin-content{
     background-color: white;
-    display: flex;
-    width: 78%;
+    
+    padding: 10px 20px 20px 20px;
+    margin-left: 20px;
+    border: 1px solid #BFBFBF;
+    border-radius: 7px;
+    min-height: 100%;
+    height: 100%;
+    width: 900px;
 }
 
+.content-header{
+    border-bottom: 1px solid #E2E2E2;
+    padding: 0px 10px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+}
 
 /* footer */
 footer{
