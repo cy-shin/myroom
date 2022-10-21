@@ -275,12 +275,78 @@ input[id^="menu"]:checked + ul{ display: block; }
 
 .content-header{
     border-bottom: 1px solid #E2E2E2;
+    margin-bottom: 20px;
     padding: 0px 10px;
     height: 50px;
 
     display: flex;
     align-items: center;
 }
+
+/* 예시용 샘플 */
+#tempA{
+    background-color: #E2E2E2;
+
+    border-radius: 7px;
+    padding: 10px;
+ 
+    height: 300px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#temp1{
+    background-color: white;
+    border-radius: 7px;
+    height: 100%;
+    width: 65%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temp1 > img{
+    width: 95%;
+    height: 95%;
+}
+
+#temp2{
+    background-color: white;
+    font-size: 40px;
+    font-weight: 800;
+    
+    border-radius: 7px;
+    height: 47.5%;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+#temp3{
+    background-color: white;
+    font-size: 40px;
+    font-weight: 800;
+    
+    border-radius: 7px;
+    height: 47.5%;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+/* 예시용 샘플 끝 */
 
 /* footer */
 footer{
