@@ -1,0 +1,26 @@
+.content-header{
+    border-bottom: 1px solid #E2E2E2;
+    margin-bottom: 10px;
+    padding: 0px 10px 5px;
+
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    letter-spacing: -2px;
+}
+
+.content-header > h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.content-header > h6{
+    font-size: 13px;
+    font-weight: 400;
+    color:#BFBFBF;
+    margin-bottom: 5px;
+}

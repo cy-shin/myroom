@@ -1,0 +1,339 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header{
+    width: 1140px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#home-logo{
+    width: 80px;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    justify-content: right;
+}
+
+#profile-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    cursor: pointer;
+}
+
+/* button{
+    cursor: pointer;
+} */
+
+/* admin */
+
+/* main */
+main{ /* main background */
+    background-color: #E2E2E2;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main{ /* main 영역 너비 지정*/
+    width: 1140px;
+    min-height: 500px;
+
+    margin: 20px 0px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* aside */
+aside{
+    background-color: white;
+    border-radius: 7px;
+
+    min-width: 300px;
+    min-height: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+
+/* admin - profile */
+.admin-profile{
+    background-color: white;
+    
+    margin-bottom: 20px;
+    border-radius: 7px;
+    /* border-bottom: 3px solid #BFBFBF;  */
+    border: 1px solid #BFBFBF;
+    height: 70px;
+
+    display: flex;
+}
+
+/* admin - logo */
+.admin-logo{
+    flex-basis: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-logo-area{
+    /* background-color: #E2E2E2; */
+
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+    overflow: hidden;
+}
+
+#admin-logo-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* admin - name */
+.admin-name{
+    flex-basis: 40%;
+    
+    letter-spacing: -2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* admin - quickmenu */
+.admin-quickmenu{
+    flex-basis: 35%;
+
+    padding: 5px 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.admin-quickmenu > a{
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -2px;
+
+    border-bottom: 1.5px solid #BFBFBF;
+    border-radius: 4px;
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-quickmenu > a[id="home"]{
+    background-color: yellowgreen;
+}
+.admin-quickmenu > a[id="home"]:hover{
+    background-color: rgb(137, 184, 45);
+}
+.admin-quickmenu > a[id="home"]:active{
+    border: none;
+}
+
+.admin-quickmenu > a[id="logout"]{
+    background-color: lightcoral;
+}
+.admin-quickmenu > a[id="logout"]:hover{
+    background-color: rgb(211, 112, 112);
+}
+.admin-quickmenu > a[id="logout"]:active{
+    border: none;
+}
+
+/* aside - nav */
+nav a{
+    color: black;
+    font-size: 12px;
+
+    text-decoration: none;
+
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+/* top-menu style */
+.top-menu-btn{
+    background-color: #bfbfbf05;
+    letter-spacing: -2px;
+    
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-bottom: 1px solid #BFBFBF31;
+
+    margin-top: 7px;
+    margin-bottom: 3px;
+    padding: 0 20px;
+    border-radius: 7px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* top-menu-btn 반응 */
+.top-menu-btn:hover{
+    background-color: #bfbfbf21;
+    padding-bottom: 2px;
+    transition: 0.3s;    
+
+}
+
+.top-menu-btn:active{
+    transform: translateY(1px);
+    transition: 0.1s;
+    opacity: 0.5;
+}
+
+/* top-menu-item */
+.top-menu-item{
+    font-size: 13px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.top-menu-item > img{
+    width: 20px;
+    height: 20px;
+}
+
+.top-menu-item > div{
+    display: flex;
+    width: 30%;
+    padding-left: 10px;
+}
+
+.top-menu-item > span{
+    color:#bfbfbf71;
+    font-weight: 100;
+    margin: 0px 0px 0px 10px;
+}
+
+/* sub-menu style */
+.dropdown-container{
+    border-bottom: 1px solid #bfbfbf21;
+    border-radius: 7px;
+}
+
+.sub-menu{ 
+    background-color: white;
+    letter-spacing: -2px;
+
+    margin-bottom: 1px;
+    /* border-bottom: 2px solid #BFBFBF; */
+    border-radius: 10px;
+    height: 25px;
+}
+
+.sub-menu:hover{
+    background-color: #bfbfbf11;
+    transition: 0.2s;
+}
+.sub-menu:active{
+    transform: translateY(1px);
+    transition: 0.1s;
+    opacity: 0.7;
+}
+
+/* ----------- aside - nav - menu toggle ---------- */
+
+/* input[type="checkbox"]{ display: none; }
+
+input[id^="menu"] + ul{ display: none; }
+
+input[id^="menu"]:checked + ul{ display: block; } */
+
+/* ----------- aside - nav - menu toggle ---------- */
+
+
+/* ------------------------------------------------ */
+.dropdown-container{
+    display: none;
+}
+.active {
+    background-color: #bfbfbf21;
+    transition-duration: 0.2s;
+}
+/* ------------------------------------------------ */
+
+
+/* admin-content */
+
+/* 별도 파일 사용 */
+
+/* admin-content */
+
+
+
+/* footer */
+footer{
+    height: 200px;
+    background-color: #BFBFBF;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+footer > article > *{
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer span{
+    padding : 0 10px;
+}
