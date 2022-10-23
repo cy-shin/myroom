@@ -52,6 +52,8 @@
     width: 200px;
     border: none;
     outline: none;
+    display: flex;
+    justify-content: center;
 }
 
 .content-header > form button{
