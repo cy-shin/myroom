@@ -54,6 +54,7 @@
 			<div class="top-menu-item">
 				<img src="resources/images/admin-page-icon.png"> <span>|</span>
 				<div>커뮤니티</div>
+				<img src="resources/images/next.png" class="right-arrow">
 			</div>
 		</button>
 		<div class="dropdown-container">
@@ -63,6 +64,7 @@
 			<div class="top-menu-item">
 				<img src="resources/images/admin-member-icon.png"> <span>|</span>
 				<div>사용자</div>
+				<img src="resources/images/next.png" class="right-arrow">
 			</div>
 		</button>
 		<div class="dropdown-container">
@@ -73,6 +75,7 @@
 			<div class="top-menu-item">
 				<img src="resources/images/admin-group-icon.png"> <span>|</span>
 				<div>소모임</div>
+				<img src="resources/images/next.png" class="right-arrow">
 			</div>
 		</button>
 		<div class="dropdown-container">
@@ -83,6 +86,7 @@
 			<div class="top-menu-item">
 				<img src="resources/images/admin-analytics-icon.png"> <span>|</span>
 				<div>분석 / 통계</div>
+				<img src="resources/images/next.png" class="right-arrow">
 			</div>
 		</button>
 		<div class="dropdown-container">

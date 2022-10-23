@@ -224,7 +224,7 @@ nav a{
 .top-menu-btn:active{
     transform: translateY(1px);
     transition: 0.1s;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 /* top-menu-item */
@@ -241,9 +241,14 @@ nav a{
     height: 20px;
 }
 
+.right-arrow{
+    width: 15px  !important;
+    height: 15px  !important;
+}
+
 .top-menu-item > div{
     display: flex;
-    width: 30%;
+    width: 100%;
     padding-left: 10px;
 }
 
@@ -297,6 +302,11 @@ input[id^="menu"]:checked + ul{ display: block; } */
 .active {
     background-color: #bfbfbf21;
     transition-duration: 0.2s;
+}
+
+.active .right-arrow{
+    transform: rotate(90deg);
+    transition-duration: 0.3s;
 }
 /* ------------------------------------------------ */
 
