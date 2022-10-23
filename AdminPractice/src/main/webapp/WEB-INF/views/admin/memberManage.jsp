@@ -45,7 +45,7 @@
                     <!-- 검색 개수 필터 -->
                     <form action="/memberManage" method="POST">
                         <div>
-                            <input type="text" name="keyword">
+                            <input type="text" name="keyword" value="${usedKeyword}" placeholder="검색어 입력">
                         </div>
                         <button class="list-num-btn">검색</button>
                     </form>

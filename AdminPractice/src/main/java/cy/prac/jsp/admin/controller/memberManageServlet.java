@@ -51,6 +51,7 @@ public class memberManageServlet extends HttpServlet{
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/memberManage.jsp");
 			
 			req.setAttribute("memberList", findMemberList);
+			req.setAttribute("usedKeyword", keyword);
 			
 			dispatcher.forward(req, resp);
 			
