@@ -53,11 +53,18 @@
 }
 
 /* 비율 조정 */
+/* 
+    number : 10%
+    email : 25%
+    name : 20%
+    date : 15%
+    ect : 10%
+*/
 .member-number{ flex-basis: 10%; }
-.member-email{ flex-basis: 20%; }
+.member-email{ flex-basis: 25%; }
 .member-name{ flex-basis: 20%;}
-.member-birth{flex-basis: 20%; }
-.signup-date{ flex-basis: 20%;}
+.member-birth{flex-basis: 15%; }
+.signup-date{ flex-basis: 15%;}
 .member-status{ flex-basis: 10%;}
 
 /* list-header 스타일 */

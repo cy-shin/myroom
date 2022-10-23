@@ -53,12 +53,19 @@
 }
 
 /* 비율 조정 */
+/* 
+    number : 10%
+    email : 25%
+    name : 20%
+    date : 15%
+    ect : 10%
+*/
 .group-number{ flex-basis: 10%; }
 .group-name{ flex-basis: 20%; }
 .leader-name{ flex-basis: 20%;}
-.create-date{flex-basis: 20%; }
-.member-number{ flex-basis: 12.5%;}
-.post-number{ flex-basis: 12.5%;}
+.create-date{flex-basis: 15%; }
+.member-number{ flex-basis: 10%;}
+.post-number{ flex-basis: 10%;}
 
 /* list-header 스타일 */
 .list-header{
