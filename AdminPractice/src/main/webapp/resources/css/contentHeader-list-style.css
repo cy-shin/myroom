@@ -41,17 +41,19 @@
 .content-header > form > div{
     border: 1px solid #bfbfbf41;
     border-radius: 3px;
-    padding-left: 10px;
     margin-right: 3px;
+    display: flex;
+    justify-content: center;
 }
 .content-header > form > div:focus-within{
     border: 1px solid #bfbfbf;
 }
 .content-header > form input{
     height: 30px;
-    width: 200px;
+    width: 100%;
     border: none;
     outline: none;
+    padding: 0px 10px;
 }
 
 .content-header > form button{
