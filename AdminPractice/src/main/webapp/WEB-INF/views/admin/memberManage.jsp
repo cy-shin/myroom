@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 페이지 | 사용자 관리 </title>
-
+	<link rel="shortcut icon" href="resources/images/admin-profile-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="resources/css/adminPage-style.css">
     <link rel="stylesheet" href="resources/css/contentHeader-list-style.css">
     <link rel="stylesheet" href="resources/css/memberManage-style.css">
@@ -49,7 +49,7 @@
                         	<button class="list-num-btn">검색</button>
                         </div>
 						<!-- 검색 개수 필터 -->
-						<select name="printNum">
+						<select name="endNum">
 							<option value=20>20</option>
 							<option value=50>50</option>
 							<option value=100>100</option>
@@ -84,7 +84,8 @@
                     <!-- 반복문 종료 -->
                 </section> <!-- content-main end -->
                 <form class="search-frm" action="/memberManage" method="POST">
-                <button>다음</button>
+                	<button>다음</button>
+                </form>
             </section> <!-- admin-content end -->
         </section> <!-- .main end -->
     </main>
