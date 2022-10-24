@@ -28,7 +28,7 @@ public class memberManageServlet extends HttpServlet{
 			
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/memberManage.jsp");
 			
-			req.setAttribute("printNum", printNum);
+			req.setAttribute("printNum", --printNum);
 			req.setAttribute("memberList", memberList);
 			
 			dispatcher.forward(req, resp);
@@ -55,7 +55,7 @@ public class memberManageServlet extends HttpServlet{
 			
 			req.setAttribute("memberList", findMemberList);
 			req.setAttribute("usedKeyword", keyword);
-			req.setAttribute("printNum", printNum);
+			req.setAttribute("printNum", --printNum);
 			
 			dispatcher.forward(req, resp);
 			
