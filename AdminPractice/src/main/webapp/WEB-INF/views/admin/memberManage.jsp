@@ -49,7 +49,7 @@
                         	<button class="list-num-btn">검색</button>
                         </div>
 						<!-- 검색 개수 필터 -->
-						<select name="endNum">
+						<select name="printNum">
 							<option value=20>20</option>
 							<option value=50>50</option>
 							<option value=100>100</option>
