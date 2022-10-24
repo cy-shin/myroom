@@ -32,7 +32,7 @@
 
 /* 검색 개수 필터 스타일 */
 .content-header > form{
-    width: 260px;
+    width: 65%;
     height: 50px;
     display: flex;
     justify-content: space-between;
