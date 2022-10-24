@@ -76,6 +76,7 @@ public class AdminDAO {
 			pstmt = conn.prepareStatement(sql);
 			
 			pstmt.setString(1, keyword);
+			pstmt.setString(2, keyword);
 			
 			rs = pstmt.executeQuery();
 			

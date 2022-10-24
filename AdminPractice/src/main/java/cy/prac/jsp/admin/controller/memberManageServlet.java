@@ -24,9 +24,11 @@ public class memberManageServlet extends HttpServlet{
 		
 		try {
 			List<Admin> memberList = service.memberList();
+			int printNum = 20;
 			
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/memberManage.jsp");
 			
+			req.setAttribute("printNum", printNum);
 			req.setAttribute("memberList", memberList);
 			
 			dispatcher.forward(req, resp);
@@ -45,6 +47,7 @@ public class memberManageServlet extends HttpServlet{
 		
 		try {
 			String keyword = req.getParameter("keyword");
+			int printNum = Integer.parseInt(req.getParameter("printNum"));
 			
 			List<Admin> findMemberList = service.findMemberList(keyword);
 			
@@ -52,6 +55,7 @@ public class memberManageServlet extends HttpServlet{
 			
 			req.setAttribute("memberList", findMemberList);
 			req.setAttribute("usedKeyword", keyword);
+			req.setAttribute("printNum", printNum);
 			
 			dispatcher.forward(req, resp);
 			

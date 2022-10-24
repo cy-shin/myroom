@@ -43,18 +43,18 @@
                     <h6>사용자 - 사용자 관리</h6>
                     <h3>사용자 관리</h3>
                     <!-- 검색 개수 필터 -->
-                    <form action="/memberManage" method="POST">
+                    <form class="search-frm" action="/memberManage" method="POST">
                         <div>
-                            <input type="text" name="keyword" value="${usedKeyword}" placeholder="검색어 입력">
+                            <input type="text" name="keyword" value="${usedKeyword}" placeholder="이름 또는 이메일 입력">
+                        	<button class="list-num-btn">검색</button>
                         </div>
-                        <button class="list-num-btn">검색</button>
-                    </form>
-                    <!-- 검색 개수 필터 -->
-                    <select class="list-num">
-                        <option>10</option>
-                        <option>20</option>
-                        <option>50</option>
-                    </select>
+						<!-- 검색 개수 필터 -->
+						<select name="printNum">
+							<option value=20 selected>20</option>
+							<option value=50>50</option>
+							<option value=100>100</option>
+						</select>
+					</form>
                 </section>
                 <section class="content-main">
                     <!-- 본문 입력 공간 -->
@@ -67,7 +67,7 @@
                         <div class="member-status">상태</div>
                     </div>
                     <!-- 반복문 자리 -->
-                     	<c:forEach var="member" items="${memberList}">
+                     	<c:forEach var="member" items="${memberList}" begin="0" end="${printNum}">
                         <form action="#" class="list-frm" method="get">
                             <button class="list-btn">
                                 <div class="list-body">
