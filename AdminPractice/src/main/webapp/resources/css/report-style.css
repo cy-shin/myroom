@@ -1,3 +1,5 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,10 +8,8 @@
 
 /* 신고 페이지 전체 영역 */
 .report-page{
-    border: 1px solid black;
     height: 500px;
     width: 400px;
-
 }
 
 /* 신고 페이지 머리말 */
@@ -31,31 +31,28 @@
 
 /* 신고 페이지 정보 영역 */
 .report-who{
-    background-color: #BFBFBF10;
-    border-top: 1px solid #BFBFBF;
-    border-bottom: 1px solid #BFBFBF;
+    background-color: #BFBFBF30;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
 .report-who > p{
     width: 100%;
-    height: 30px;
+    height: 20px;
     display: flex;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
-
 .report-who > p > strong{
     flex-basis: 20%;
     color:gray;
     font-size: 13px;
     font-weight: 400;
 }
-
 .report-who > p > span{
     font-size: 13px;
 }
@@ -67,31 +64,44 @@
     background-color: none;
 }
 
+/* 신고 사유 리스트 */
 .report-frm > ul{
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: 1px solid #BFBFBF40;
+    padding: 0 30px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.report-frm > ul > li{
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.report-frm > ul > li:last-child{
+    border-bottom: none;
 }
 
 /* 신고 버튼 */
 .report-btn{
-    font-size: 15px;
+    font-weight: 800;
+    font-size: 14px;
     background-color: white;
 
     border: none;
-    padding: 20px;
     border-bottom: 1px solid #BFBFBF40;
 
     width: 100%;
     height: 70px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-
-/* 버튼 내 이미지 */
+.report-btn > span{
+    flex-basis: 100%;
+    text-align: start;
+}
 .report-btn > img{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+}
+.report-btn:hover{
+    cursor: pointer;
+    transition: 0.1s;
 }
