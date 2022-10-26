@@ -1,3 +1,4 @@
+
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 *{
@@ -11,6 +12,8 @@ body{
     min-height: 100%;
     position: relative;
 }
+
+/* -------------------------------------------------------------- */
 
 /* 신고 페이지 전체 영역 */
 .report-page{
@@ -96,7 +99,7 @@ body{
     height: 10px;
 }
 
-/* 테스트용 */
+/* --------------------------------------------------------------------------------- */
 
 
 
