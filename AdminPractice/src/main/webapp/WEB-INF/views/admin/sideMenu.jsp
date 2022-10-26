@@ -98,6 +98,22 @@
 </aside>
 
 <script>
+	/* css버전 사이드바 사용했을 때 버튼 색깔 바꾸는 스크립트 */
+	/* function chkMenu(target) {
+    	const checkboxes = document.querySelectorAll(`input[type=checkbox]`)
+    	checkboxes.forEach(el => el.checked = false);
+    	target.active = true;
+
+    	if(target.checked){
+        topMenu.style.background="white";
+    	}
+    	if(!target.checked){
+        topMenu.style.background="#E2E2E2";
+    	}
+	} */
+
+
+	/* 자바스크립트 드롭다운 메뉴 */
 	var dropdown = document.getElementsByClassName("top-menu-btn");
 	var i;
 

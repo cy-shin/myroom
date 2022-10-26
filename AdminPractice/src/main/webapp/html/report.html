@@ -12,7 +12,7 @@
     <!-- 신고하기 영역 -->
     <div class="report-page">
         <header class="report-head"> 신고하기 </header>
-        <form class="report-frm">
+        <form class="report-frm" action="#">
             <div class="report-who">
                 <p>
                     <strong>소모임명</strong>
@@ -20,30 +20,40 @@
                 </p>
                 <p>
                     <strong>소개글</strong>
-                    <span>코코</span>
+                    <span id="content">신고 내용은 이용약관 및 정책에 의해서 처리되며, 허위신고 시 서비스 이용이 제한될 수 있습니다.</span>
                 </p>
-            </div>
+            </div> <!-- report-who end -->
             <ul>
                 <li class="report-why">
                     <button class="report-btn" name="reason1">
-                        <strong>신고사유</strong>
-                        <span><img src="../resources/images/next.png"></span>
+                        <span>신고사유</span>
+                        <img src="../resources/images/right-arrow.png">
                     </button>
                 </li>
                 <li class="report-why">
-                    <button class="report-btn" name="reason1">
-                        <strong>신고사유</strong>
-                        <span><img src="../resources/images/next.png"></span>
+                    <button class="report-btn" name="reason2">
+                        <span>신고사유</span>
+                        <img src="../resources/images/right-arrow.png">
                     </button>
                 </li>
                 <li class="report-why">
-                    <button class="report-btn" name="reason1">
-                        <strong>신고사유</strong>
-                        <span><img src="../resources/images/next.png"></span>
+                    <button class="report-btn" name="reason3">
+                        <span>신고사유</span>
+                        <img src="../resources/images/right-arrow.png">
                     </button>
                 </li>
             </ul> <!-- ul end -->
         </form> <!-- report-frm end -->
+    </div>
+
+    <div class="report-confirm">
+        <div>
+            신고 내용은 이용약관 및 정책에 의해서 처리되며, 허위신고 시 서비스 이용이 제한될 수 있습니다.
+        </div>
+        <div class="report-confirm-btn">
+            <button class="report-cancel">취소</button>
+            <button class="report-agree">신고하기</button>
+        </div>
     </div>
 </body>
 </html>
