@@ -9,10 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 페이지 | 사용자 관리 </title>
+
+    <%-- 탭 아이콘 이미지 --%>
 	<link rel="shortcut icon" href="resources/images/admin-profile-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="resources/css/adminPage-style.css">
-    <link rel="stylesheet" href="resources/css/contentHeader-list-style.css">
-    <link rel="stylesheet" href="resources/css/memberManage-style.css">
+
+    <%-- css --%>
+    <link rel="stylesheet" href="resources/css/adminPage-style.css"> <%-- body --%>
+    <link rel="stylesheet" href="resources/css/contentHeader-list-style.css"> <%-- content - header --%>
+    <link rel="stylesheet" href="resources/css/memberManage-style.css"> <%-- content - main  --%>
+
+    <%-- js --%>
+
+
 </head>
 <body>
     <header>
@@ -33,12 +41,13 @@
 
 
     <main>
-        <section class="main">
+        <section class="main-section">
             
             <!-- 사이드 메뉴 -->
 			<jsp:include page="/WEB-INF/views/admin/sideMenu.jsp" />        
             <!-- 본문 -->
             <section class="admin-content">
+            <section class="content-section">
                 <section class="content-header">
                     <h6>사용자 - 사용자 관리</h6>
                     <h3>사용자 관리</h3>

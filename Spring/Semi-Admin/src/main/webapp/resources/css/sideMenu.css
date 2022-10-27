@@ -1,6 +1,4 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
-
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -15,6 +13,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 #home-logo{
@@ -40,9 +39,9 @@ header{
     cursor: pointer;
 } */
 
-/* admin */
+/* ***************************************** */
+/* main 영역 style */
 
-/* main */
 main{ /* main background */
     background-color: #E2E2E2;
     min-height: 100vh;
@@ -51,7 +50,7 @@ main{ /* main background */
     justify-content: center;
 }
 
-.main{ /* main 영역 너비 지정*/
+.main-section{ /* main 영역 너비 지정*/
     width: 1140px;
     min-height: 300px;
 

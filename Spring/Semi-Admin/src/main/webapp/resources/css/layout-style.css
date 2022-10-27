@@ -1,0 +1,116 @@
+/* font & box-sizing */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header{
+    background-color: white;
+
+    width: 1140px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#home-logo{
+    width: 80px;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    justify-content: right;
+}
+
+#profile-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    cursor: pointer;
+}
+/* Header end */
+
+/* main */
+main{ /* 배경색 */
+    background-color: #E2E2E2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  
+ * main 구성
+ - main > section(.main-content )
+ - section(.main-content) > aside(.profile), section(.admin-content)
+ - aside(.profile) > article, nav
+*/
+
+.main-content{
+    width: 1140px;
+    height: 700px;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.sidebar{
+    width: 200px;
+}
+
+.admin-info, .menu-list{
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* section.admin-content */
+.admin-content{
+    width: 900px;
+    margin-left: 20px;
+    background-color: black;
+}
+
+/* main end */
+
+/* footer */
+footer{
+    height: 200px;
+    background-color: #BFBFBF;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+footer > article > *{
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer span{
+    padding : 0 10px;
+}
+/* footer end */
