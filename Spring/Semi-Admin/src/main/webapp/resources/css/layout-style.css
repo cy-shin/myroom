@@ -40,24 +40,22 @@ header{
 }
 /* Header end */
 
+
+/* body */
+body{ /* body의 최소 크기를 header보다 크게 */
+    min-width: 1300px; 
+}
+
 /* main */
 main{ /* 배경색 */
     background-color: #E2E2E2;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*  
- * main 구성
- - main > section(.main-content )
- - section(.main-content) > aside(.profile), section(.admin-content)
- - aside(.profile) > article, nav
-*/
 
 .main-content{
-    width: 1140px;
     height: 700px;
     display: flex;
     margin: 20px 0px;
@@ -77,9 +75,9 @@ main{ /* 배경색 */
 
 /* section.admin-content */
 .admin-content{
-    width: 900px;
+    width: 920px;
     margin-left: 20px;
-    background-color: black;
+    background-color: white;
 }
 
 /* main end */
