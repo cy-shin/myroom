@@ -7,17 +7,25 @@
     margin: 0;
 }
 
-/* Header */
+/* body */
+body{ /* body의 최소 크기를 header보다 크게 */
+    min-width: 1300px; 
+}
+/* end body */
+
+
+/* header */
 header{
     background-color: white;
 
     width: 1140px;
     height: 70px;
+
     margin: auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #home-logo{
@@ -27,60 +35,160 @@ header{
 .box {
     width: 40px;
     height: 40px;
+
     border-radius: 70%;
-    overflow: hidden;
+
     justify-content: right;
+
+    overflow: hidden;
 }
 
 #profile-photo{
     width: 100%;
     height: 100%;
+
     object-fit: cover;  
     cursor: pointer;
 }
-/* Header end */
+/* and header */
 
 
-/* body */
-body{ /* body의 최소 크기를 header보다 크게 */
-    min-width: 1300px; 
-}
 
-/* main */
-main{ /* 배경색 */
+/* 배경색 및 flex용 main */
+main{ /* 배경색 및 flex */
     background-color: #E2E2E2;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* end main */
 
 
-.main-content{
+/* 진짜 main */
+.main{
     height: 700px;
-    display: flex;
+
     margin: 20px 0px;
+    
+    display: flex;
 }
+/* end .main */
 
 .sidebar{
     width: 200px;
 }
 
-.admin-info, .menu-list{
+.admin-info, .admin-menu{
+    background-color: white;
+
     width: 200px;
-    height: auto;
-    background-color: white;
-    border-radius: 5px;
+    
+    padding: 15px;
+    border-radius: 10px;
 }
 
+/* .content */
+.content{
+    background-color: white;
 
-/* section.admin-content */
-.admin-content{
     width: 920px;
+    
     margin-left: 20px;
-    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    display:flex;
+    justify-content: center;
+}
+/* end .content */
+
+
+/* .content-header */
+.content-header{
+    width: 100%;
+    height: 70px;
+    
+    border-bottom: 2px solid #E2E2E2;
 }
 
-/* main end */
+/* search */
+#searchbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.keyword-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box{
+    height: 30px;
+    
+    border: 1px solid #BFBFBF;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box > input{
+    border: none;
+    outline: none;
+}
+.input-box:focus-within{
+    border: 1px solid black;
+}
+
+/* 버튼 */
+.keyword-box > button{
+    background-color: #E2E2E2;
+
+    height: 30px;
+    width: 40px;
+
+    border: none;
+}
+
+/* 마우스 올렸을 때 */
+.keyword-box > button:hover{
+    background-color: #BFBFBF;
+    transition-duration: 0.2s;
+}
+
+/* 버튼 눌렀을 때 */
+.keyword-box > button:active{
+    opacity: 0.9;
+    transition-duration: 0.1s;
+}
+
+
+
+/* end .content-header */
+
+
+
+
+
+
+
+/* .content-body */
+
+
+
+
+
+
+
+/* end .content-body */
+
+
+
+
+
+
 
 /* footer */
 footer{
@@ -111,4 +219,4 @@ footer a{
 footer span{
     padding : 0 10px;
 }
-/* footer end */
+/* end footer */

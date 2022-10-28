@@ -27,9 +27,11 @@
     </header>
 
     <main> <!-- for background color -->
-        <section class="main-content"> <!-- main에 배경색을 주려고 별도의 main-section 추가함 -->
+
+        <section class="main"> <!-- main에 배경색을 주려고 별도의 main-section 추가함 -->
             <aside class="sidebar">
-                <article class="admin-info"> <!-- admin-profile  -->
+
+                <article class="admin-info"> <!-- admin-info  -->
                     <div class="info-image-area">
                         <img id="info-image" src="resources/images/admin-profile-icon.png">
                     </div>
@@ -40,7 +42,7 @@
                     </div>
                 </article> <!-- admin-profile end -->
                 
-                <nav class="menu-list">
+                <nav class="admin-menu">
                     <a href="#">공지사항</a>
                     <ul> 밴드 관리
                         <li><a href="#">회원</a></li>
@@ -51,11 +53,32 @@
                 </nav>
                 
             </aside>
-            <section class="admin-content">
+            <section class="content">
                 <div class="content-header">
+                    <h6>경로</h6>
+                    <span>메뉴 이름</span>
+                    <form id="searchbar" action="#" method="GET">
 
+                        <select name="type">
+                            <option value="">분류1</option>
+                            <option value="">분류2</option>
+                            <option value="">분류3</option>
+                        </select>
+
+                        <div class="keyword-box">
+                            <div class="input-box"><input type="text" name="keyword"></div>
+                            <button class="btn">검색</button>
+                        </div>
+
+                        <select name="number">
+                            <option value="">50</option>
+                            <option value="">100</option>
+                            <option value="">200</option>
+                        </select>
+
+                    </form> <!-- end .searchbar -->
                 </div>
-                <div class="content-main">
+                <div class="content-body">
                     
                 </div>
             </section> <!-- admin-content end -->
