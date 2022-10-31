@@ -90,6 +90,166 @@ main{ /* 배경색 및 flex */
 }
 /* end .main */
 
+/* .content */
+.content{
+    background-color: white;
+
+    width: 920px;
+    
+    margin-left: 20px;
+    padding: 15px;
+    border-radius: 10px;
+
+    display:flex;
+    flex-direction: column;
+}
+/* end .content */
+
+
+/* .content-header */
+.content-header{
+    width: 100%;
+    height: 60px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* end .content-header */
+
+/* searchbar */
+#searchbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.keyword-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box{
+    height: 20px;
+    width: 170px;
+    
+    border: 1px solid #BFBFBF;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box > input{
+    border: none;
+    outline: none;
+}
+.input-box:focus-within{
+    border: 1px solid black;
+}
+
+/* 버튼 */
+.keyword-box > button{
+    background-color: #E2E2E2;
+
+    height: 20px;
+    width: 40px;
+
+    border: none;
+}
+
+/* 마우스 올렸을 때 */
+.keyword-box > button:hover{
+    background-color: #BFBFBF;
+    transition-duration: 0.2s;
+}
+
+/* 버튼 눌렀을 때 */
+.keyword-box > button:active{
+    opacity: 0.9;
+    transition-duration: 0.1s;
+}
+/* end .searchbar */
+
+
+/* .content-body */
+.content-body{
+    margin-top: 10px;
+
+    border-top: 1px solid #BFBFBF;
+}
+
+/* list */
+.list-header{
+    display: flex;
+    margin-top: 10px;
+}
+
+.memberNo{ flex-basis: 15%; }
+.memberEmail{ flex-basis: 30%; }
+.memberName{ flex-basis: 25%;}
+.memberDate{ flex-basis: 20%;}
+.memberStatus{ flex-basis: 10%;}
+
+.list-btn{
+    margin-top: 10px;
+    
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    border: none;
+}
+
+/* end .content-body */
+
+/* footer */
+footer{
+    height: 200px;
+    background-color: #BFBFBF;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+footer > article > *{
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer span{
+    padding : 0 10px;
+}
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .sidebar */
 .sidebar{
     width: 200px;
@@ -166,128 +326,4 @@ main{ /* 배경색 및 flex */
     margin-bottom: 10px;
 }
 
-
 /* end .sidebar */
-
-
-/* .content */
-.content{
-    background-color: white;
-
-    width: 920px;
-    
-    margin-left: 20px;
-    padding: 15px;
-    border-radius: 10px;
-
-    display:flex;
-    flex-direction: column;
-}
-/* end .content */
-
-
-/* .content-header */
-.content-header{
-    width: 100%;
-    height: 60px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* end .content-header */
-
-/* searchbar */
-#searchbar{
-    display: flex;
-    justify-content: space-between;
-}
-
-.keyword-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.input-box{
-    height: 30px;
-    width: 200px;
-    
-    border: 1px solid #BFBFBF;
-    padding: 5px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.input-box > input{
-    border: none;
-    outline: none;
-}
-.input-box:focus-within{
-    border: 1px solid black;
-}
-
-/* 버튼 */
-.keyword-box > button{
-    background-color: #E2E2E2;
-
-    height: 30px;
-    width: 40px;
-
-    border: none;
-}
-
-/* 마우스 올렸을 때 */
-.keyword-box > button:hover{
-    background-color: #BFBFBF;
-    transition-duration: 0.2s;
-}
-
-/* 버튼 눌렀을 때 */
-.keyword-box > button:active{
-    opacity: 0.9;
-    transition-duration: 0.1s;
-}
-/* end .searchbar */
-
-/* .content-body */
-.content-body{
-    margin-top: 10px;
-
-    border-top: 1px solid #BFBFBF;
-}
-
-/* end .content-body */
-
-/* footer */
-footer{
-    height: 200px;
-    background-color: #BFBFBF;
-    
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-}
-
-footer > p{
-    font-weight: bold;
-    margin: 16px 0;
-}
-
-footer > article > *{
-    font-size: 14px;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-}
-
-footer span{
-    padding : 0 10px;
-}
-/* end footer */

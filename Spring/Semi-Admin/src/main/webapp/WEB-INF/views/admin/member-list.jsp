@@ -1,3 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout sample</title>
 
-    <link rel="stylesheet" href="../../resources/css/layout-style.css">
+    <link rel="stylesheet" href="resources/css/admin/member-list-style.css">
+    <link rel="stylesheet" href="resources/css/admin/layout-style.css">
     
 </head>
 <body>
@@ -48,8 +54,8 @@
                     </ul>
                         
                     <ul> 밴드 관리
-                        <li><a href="#"> - 회원</a></li>
-                        <li><a href="#"> - 소모임</a></li>
+                        <li><a href="#">- 회원</a></li>
+                        <li><a href="#">- 소모임</a></li>
                         <li><a href="#">- 게시글</a></li>
                     </ul>
 
@@ -62,8 +68,8 @@
             </aside>
             <section class="content">
                 <div class="content-header">
-                    <h6>경로</h6>
-                    <h3>메뉴 이름</h3>
+                    <h6>밴드 관리 / 회원</h6>
+                    <h3>회원 검색</h3>
                 </div>
                 
                 <form id="searchbar" action="#" method="GET">
@@ -89,7 +95,26 @@
 
                 <div class="content-body">
                     
+                    <div class="list-header">
+                        <span class="memberNo">번호</span>
+                        <span class="memberEmail">이메일</span>
+                        <span class="memberName">이름</span>
+                        <span class="memberDate">가입일</span>
+                        <span class="memberStatus">상태</span>
+                    </div>
+
+                    <form action="#" class="list-frm" method="get">
+                        <button class="list-btn">
+                            <span class="memberNo">1</span>
+                            <span class="memberEmail">2</span>
+                            <span class="memberName">3</span>
+                            <span class="memberDate">4</span>
+                            <span class="memberStatus">5</span>
+                        </button>
+                    </form>
                 </div>
+
+
             </section> <!-- admin-content end -->
         </section> <!-- main-content end -->
     </main>
