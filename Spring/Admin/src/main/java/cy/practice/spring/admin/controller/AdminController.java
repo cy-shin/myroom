@@ -16,17 +16,11 @@ import cy.practice.spring.admin.model.vo.Member;
 @Controller
 public class AdminController {
 	
-	
 	// memberList으로 이동
 	@GetMapping("/admin/memberList")
 	public String memberList() {
-		return "admin/memberList";
+		return "admin/member-list";
 	}
-	
 	
 	// 검색
-	@PostMapping("/admin/memberList")
-	public String memberSearch() {
-		
-	}
 }
