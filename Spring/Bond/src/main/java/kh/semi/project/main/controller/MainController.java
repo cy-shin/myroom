@@ -44,7 +44,7 @@ public class MainController {
 	 *    해당 VO 객체의 필드에 파라미터를 세팅
 	 *    
 	 * [조건]
-	 * 1. name 속성 값과 필드 명이 같아야 함.
+	 * 1. name 속성 값과 필드 명이 같아야 함. -> 값을 얻어오지 못한다면 jsp 파일에서 name 확인
 	 * 2. VO에 반드시 기본 생성자가 존재해야 함.
 	 * 3. VO에 반드시 setter가 존재해야 함.
 	 * 
@@ -54,10 +54,20 @@ public class MainController {
 	@PostMapping("/login")
 	public String login(/*@ModelAttributes*/ Member inputMember // Member 객체를 얻어옴
 					  , Model model // Model : 데이터를 Map 형태로 저장, 전달하는 객체로 request scope를 기본값으로 가짐
-					//, RedirectAttributes ra : redirect 시 값을 전달할 때 사용하는 객체로 request scope에 위치하나, redirect 시에만 session scope로 이동함
+					  //, RedirectAttributes ra : redirect 시 값을 전달할 때 사용하는 객체로 request scope에 위치하나, redirect 시에만 session scope로 이동함
 						) {
 		Member loginMember = service.login(inputMember); // ModelAttribute를 사용하고 있어서, 별도의 세팅 작업이 필요하지 않음
 		
-		return null;
+		String path = "/admin/main";
+		
+		if(loginMember != null) {
+			path= "/admin/member-list";
+		} else {
+			model.addAttribute("message", "아이디, 비밀번호를 확인해줘!");
+		}
+		return path;
+		
+		// 연결 완료
+		// 연결 실패 시 message 띄우기 -> 어디서?
 	}
 }
