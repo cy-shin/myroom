@@ -4,7 +4,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
                     </ul>
                         
                     <ul> 밴드 관리
-                        <li><a href="admin/memberList2">- 회원</a></li>
+                        <li><a href="">- 회원</a></li>
                         <li><a href="#">- 소모임</a></li>
                         <li><a href="#">- 게시글</a></li>
                     </ul>
