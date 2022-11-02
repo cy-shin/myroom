@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -14,10 +13,116 @@
     <script src="https://kit.fontawesome.com/345198b845.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h3>session scope 확인</h3>
+    <section class="header-area">
+        <header>
+            <div>
+                <!-- 클릭 시 메인으로 이동하는 로고  -->
+                <a href="#">
+                    <img src="/resources/images/home-logo.png" id="home-logo">
+                </a>
+            </div>
+    
+            <div class="profile">
+                <!-- 내 정보 사진 -->
+                <button type="button" class="box">
+                    <img src="/resources/images/profile-photo.png" id="profile-photo">
+                </button>
+            </div>
+        </header>
+    </section>
+
+    <!-- 네비게이션 -->
+    <section class="nav-area">
+        <nav>
+            <div class="mainPage-menu">
+                <a href="#">내 모임</a>
+                <a href="#">모임찾기</a>
+            </div>
+    
+            <div class="mainPage-optionBox">
+                <a href="#">목록 편집</a>
+                <a href="#">본드 가이드</a>
+            </div>
+        </nav>
+    </section>
+
+
+    <main>
+        <!-- 내 모임 리스트 -->
+        <section class="myGroup-area">
+            <ul class="myGroup-list">
+                <li class="groupCardItem">
+                    <a href="#">
+                        <div class="make-icon">
+                            <span id="plus-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+                        <div class="groupInfo make-text">
+                            <span class="make-group">만들기</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="groupCardItem">
+                    <a href="#">
+                        <img src="/resources/images/group1.jpg">
+                        <div class="groupInfo">
+                            <p>KH 팀프로젝트</p>
+                            <span>멤버 5</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="groupCardItem">
+                    <a href="#">
+                        <img src="/resources/images/group2.jpg">
+                        <div class="groupInfo">
+                            <p>여행 가즈아</p>
+                            <span>멤버 20</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="groupCardItem">
+                    <a href="#">
+                        <img src="/resources/images/group3.jpg">
+                        <div class="groupInfo">
+                            <p>맛집 탐사대</p>
+                            <span>멤버 10</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="myGroup-schedule">
+            <h3>내 모임 정모</h3>
+            <div class="schedule">
+                
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            BOND &copy; 2022
+        </p>
+
+        <article>
+            <a href="#">블로그</a>
+            <span>|</span>
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보처리방침</a>
+            <span>|</span>
+            <a href="#">고객센터</a>
+        </article>
+
+    </footer>
+    
+      <h3>session scope 확인</h3>
   이름 : "${loginMember.memberName}";
   생일 : "${loginMember.memberBirth}";
   전화번호 : "${loginMember.memberTel}";
-	
+  
+  	  <a href="/logout">로그아웃</a>
+
 </body>
 </html>

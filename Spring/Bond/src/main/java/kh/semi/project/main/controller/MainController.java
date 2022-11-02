@@ -19,7 +19,7 @@ public class MainController {
 	// 메인화면(로그인 전 화면)으로 이동
 	@GetMapping("/")
 	public String main() {
-		return "/common/indexMain";
+		return "redirect:/index/main";
 	}
 	
 

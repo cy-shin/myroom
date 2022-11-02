@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kh.semi.project.member.model.service.MemberService;
@@ -44,6 +45,11 @@ public class MemberController {
 	// + @SessionAttributes 어노테이션과 함께 작성 시
 	//   session scope로 변환 가능
 	
+	// 로그인 전 화면
+	@GetMapping("/index/main")
+	public String main() {
+		return "/common/indexMain";
+	}
 	
 	// 로그인 화면
 	@GetMapping("/login")
@@ -98,10 +104,10 @@ public class MemberController {
 	 * @return
 	 */
 	@GetMapping("/logout")
-	public String logout(Member loginMember
-						, Model model) {
-		loginMember = null;
-		model.addAttribute("loginMember", loginMember);
-		return "/";
+	public String logout(SessionStatus status) {
+		
+		status.setComplete();
+		
+		return "redirect:/";
 	}
 }

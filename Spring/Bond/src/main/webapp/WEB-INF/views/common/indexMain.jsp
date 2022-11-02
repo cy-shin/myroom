@@ -78,6 +78,11 @@
                 </li>
             </ul>    
         </section>
+        
+          <h3>session scope 확인</h3>
+  이름 : "${loginMember.memberName}";
+  생일 : "${loginMember.memberBirth}";
+  전화번호 : "${loginMember.memberTel}";
 
     
 
