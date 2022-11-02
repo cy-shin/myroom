@@ -98,7 +98,10 @@ public class MemberController {
 	 * @return
 	 */
 	@GetMapping("/logout")
-	public String logout() {
+	public String logout(Member loginMember
+						, Model model) {
+		loginMember = null;
+		model.addAttribute("loginMember", loginMember);
 		return "/";
 	}
 }
