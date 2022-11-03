@@ -15,7 +15,7 @@ public class AdminDAO {
 	private SqlSession sqlSession;
 	
 	public List<Member> printMemberList() {
-		return sqlSession.selectList("adminMemberMapper.memberList");
+		return sqlSession.selectList("memberMapper.memberList");
 	}
 
 }

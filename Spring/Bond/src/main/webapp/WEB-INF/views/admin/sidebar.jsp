@@ -6,7 +6,7 @@
 
     <article class="admin-info"> <!-- admin-info  -->
         <div class="info-image-area">
-            <img id="info-image" src="/resources/images/admin/admin-profile-icon.png">
+            <img id="info-image" src="/resources/images/admin-profile-icon.png">
         </div>
         <span>관리자1</span>
         <div class="profile-btn-area">

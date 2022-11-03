@@ -25,38 +25,8 @@
 
         <section class="main"> 
             
-            <%-- <jsp:include page="/WEB-INF/views/admin/sidebar.jsp" /> --%>
-            <aside class="sidebar">
+	<jsp:include page="/WEB-INF/views/admin/sidebar.jsp" />
 
-    <article class="admin-info"> <!-- admin-info  -->
-        <div class="info-image-area">
-            <img id="info-image" src="/resources/images/admin-profile-icon.png">
-        </div>
-        <span>관리자1</span>
-        <div class="profile-btn-area">
-            <a href="#" id="home">밴드 홈</a>
-            <a href="/logout" id="logout">로그아웃</a>
-        </div>
-    </article> <!-- admin-profile end -->
-    
-    <nav class="admin-menu">
-        <ul class="menu">
-            <a href="#">공지사항</a>
-        </ul>
-            
-        <ul class="menu"> 밴드 관리
-            <li><a href="#">- 회원</a></li>
-            <li><a href="#">- 소모임</a></li>
-            <li><a href="#">- 게시글</a></li>
-        </ul>
-
-        <ul class="menu">
-            <a href="#">신고</a>
-        </ul>
-
-    </nav>
-    
-</aside>
 
             <section class="content">
                 <div class="content-header">
@@ -78,9 +48,9 @@
 				    </div>
 				
 				    <select name="number">
+				        <option value="">10</option>
+				        <option value="">20</option>
 				        <option value="">50</option>
-				        <option value="">100</option>
-				        <option value="">200</option>
 				    </select>
 				
 				</form> <!-- end .searchbar -->
@@ -97,13 +67,13 @@
 					
 					<!-- 목록 불러오기 반복문 -->
                     <c:forEach var="member" items="${memberList}">
-                    <form action="/printMemberList" class="list-frm" method="get">
+                    <form action="/printMemberList" class="list-frm" method="GET">
                         <button class="list-btn">
-                            <span class="memberNo">"${memberList.memberNo}"</span>
-                            <span class="memberEmail">2</span>
-                            <span class="memberName">3</span>
-                            <span class="memberDate">4</span>
-                            <span class="memberStatus">5</span>
+                            <span class="memberNo">${member.memberNo}</span>
+                            <span class="memberEmail">${member.memberEmail}</span>
+                            <span class="memberName">${member.memberName}</span>
+                            <span class="signUpDate">${member.signUpDate}</span>
+                            <span class="memberStatus">${member.memberStatus}</span>
                         </button>
                     </form>
 					</c:forEach>
@@ -111,6 +81,13 @@
                 </div>
 
 
+            <div class="content-footer">
+            	<span>prev</span>
+            	<span>1</span>
+            	<span>2</span>
+            	<span>3</span>
+            	<span>next</span>
+            </div>
             </section> <!-- admin-content end -->
         </section> <!-- main-content end -->
     </main>
