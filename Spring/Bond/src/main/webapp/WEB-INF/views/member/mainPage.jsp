@@ -13,23 +13,7 @@
     <script src="https://kit.fontawesome.com/345198b845.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="header-area">
-        <header>
-            <div>
-                <!-- 클릭 시 메인으로 이동하는 로고  -->
-                <a href="#">
-                    <img src="/resources/images/home-logo.png" id="home-logo">
-                </a>
-            </div>
-    
-            <div class="profile">
-                <!-- 내 정보 사진 -->
-                <button type="button" class="box">
-                    <img src="/resources/images/profile-photo.png" id="profile-photo">
-                </button>
-            </div>
-        </header>
-    </section>
+    <jsp:include page="/WEB-INF/views/common/header.jsp" />
 
     <!-- 네비게이션 -->
     <section class="nav-area">
@@ -100,22 +84,7 @@
         </section>
     </main>
     
-    <footer>
-        <p>
-            BOND &copy; 2022
-        </p>
-
-        <article>
-            <a href="#">블로그</a>
-            <span>|</span>
-            <a href="#">이용약관</a>
-            <span>|</span>
-            <a href="#">개인정보처리방침</a>
-            <span>|</span>
-            <a href="#">고객센터</a>
-        </article>
-
-    </footer>
+	<jsp:include page="/WEB-INF/views/common/footer.jsp" />
     
       <h3>session scope 확인</h3>
   이름 : "${loginMember.memberName}";

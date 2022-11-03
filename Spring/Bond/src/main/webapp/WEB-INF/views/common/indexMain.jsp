@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="/resources/css/index-page.css">
 </head>
 <body>
-    <header>
-        <section>
-            <!-- 클릭 시 메인으로 이동하는 로고  -->
-            <a href="/">
-                <img src="/resources/images/home-logo.png" id="home-logo">
-            </a>
-        </section>
-        <section class="top-menu">
-            <ul>
-                <li><a href="#" class="signUp">회원가입</a></li>
-                <li><a href="/login" class="login">로그인</a></li>
-            </ul>
-        </section>
-    </header>
+	<header>
+		<section>
+			<!-- 클릭 시 메인으로 이동하는 로고  -->
+			<a href="/"> <img src="/resources/images/home-logo.png"
+				id="home-logo">
+			</a>
+		</section>
+		<section class="top-menu">
+			<ul>
+				<li><a href="#" class="signUp">회원가입</a></li>
+				<li><a href="/login" class="login">로그인</a></li>
+			</ul>
+		</section>
+	</header>
     
     <main>
         <section class="index-menu">
@@ -88,22 +88,7 @@
 
     </main>
     
-    <footer>
-        <p>
-            BOND &copy; 2022
-        </p>
-
-        <article>
-            <a href="#">블로그</a>
-            <span>|</span>
-            <a href="#">이용약관</a>
-            <span>|</span>
-            <a href="#">개인정보처리방침</a>
-            <span>|</span>
-            <a href="#">고객센터</a>
-        </article>
-
-    </footer>
+	<jsp:include page="/WEB-INF/views/common/footer.jsp" />
 
 </body>
 </html>
