@@ -21,9 +21,9 @@
         </ul>
             
         <ul> 밴드 관리
-            <li><a href="#">- 회원</a></li>
-            <li><a href="#">- 소모임</a></li>
-            <li><a href="#">- 게시글</a></li>
+            <li><a href="/admin/memberList">- 회원</a></li>
+            <li><a href="/admin/groupList">- 소모임</a></li>
+            <li><a href="/admin/postList">- 게시글</a></li>
         </ul>
 
         <ul>

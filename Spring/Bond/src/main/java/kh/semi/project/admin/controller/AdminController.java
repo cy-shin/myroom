@@ -9,22 +9,42 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import kh.semi.project.admin.model.service.AdminService;
+import kh.semi.project.member.model.vo.Group;
 import kh.semi.project.member.model.vo.Member;
+import kh.semi.project.member.model.vo.Post;
 
-@SessionAttributes("memberList")
+// 여러개를 적을 때는 중괄호 안에 배열 형태로 작성
+@SessionAttributes({"memberList", "postList"})
 @Controller
 public class AdminController {
 	
 	@Autowired
 	private AdminService service;
 
-	/** 로그인 후 관리자 페이지로 이동
+	/** 회원 리스트 페이지로 이동
 	 * @return
 	 */
 	@GetMapping("/admin/memberList")
 	public String goMemberList() {
 		return "/admin/memberList";
 	}
+	
+	/** 게시글 리스트 페이지로 이동
+	 * @return
+	 */
+	@GetMapping("/admin/postList")
+	public String goPostList() {
+		return "/admin/postList";
+	}
+	
+	/** 모임 리스트 페이지로 이동
+	 * @return
+	 */
+	@GetMapping("/admin/groupList")
+	public String goGroupList() {
+		return "/admin/groupList";
+	}
+	
 	
 	/*
 	   		- 일반 for + 추가 기능
@@ -49,7 +69,8 @@ public class AdminController {
    						5> last : 마지막 반복이면 true, 아니면 false
 	 */
 	
-	/** 리스트 불러오기
+	/** 회원 리스트 불러오기
+	 * @param model
 	 * @return
 	 */
 	@GetMapping("/printMemberList")
@@ -60,5 +81,33 @@ public class AdminController {
 		model.addAttribute("memberList", memberList);
 		
 		return "redirect:/admin/memberList";
+	}
+	
+	/** 게시글 리스트 불러오기
+	 * @param model
+	 * @return
+	 */
+	@GetMapping("/printPostList")
+	public String printPostList(Model model) {
+		
+		List<Post> postList = service.printPostList();
+		
+		model.addAttribute("postList", postList);
+		
+		return "redirect:/admin/postList";
+	}
+	
+	/** 모임 리스트 불러오기
+	 * @param model
+	 * @return
+	 */
+	@GetMapping("/printGroupList")
+	public String printGroupList(Model model) {
+		
+		List<Group> groupList = service.printGroupList();
+		
+		model.addAttribute("groupList", groupList);
+		
+		return "redirect:/admin/groupList";
 	}
 }
