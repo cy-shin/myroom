@@ -8,13 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
-    <link rel="stylesheet" href="/resources/css/index-page.css">
+    <link rel="stylesheet" href="/resources/css/common/index-page.css">
 </head>
 <body>
 	<header>
 		<section>
 			<!-- 클릭 시 메인으로 이동하는 로고  -->
-			<a href="/"> <img src="/resources/images/home-logo.png"
+			<a href="/"> <img src="/resources/images/common/home-logo.png"
 				id="home-logo">
 			</a>
 		</section>
@@ -30,7 +30,7 @@
         <section class="index-menu">
             <div class="index-menu-area">
                 <div class="index-logo-area">
-                    <img src="/resources/images/home-logo-white.png" id="index-logo">
+                    <img src="/resources/images/common/home-logo-white.png" id="index-logo">
                 </div>
                 <div id="login-title">
                     <h2>취미가 쉬워진다! <br> 끼리끼리 본드</h2>
@@ -53,7 +53,7 @@
             
             <ul class="intro-list">
                 <li>
-                    <img src="/resources/images/intro1.jpg">
+                    <img src="/resources/images/common/intro1.jpg">
                     <div class="list-text">
                         <h3>어떤 모임이라도!</h3>
                         <p>친구, 가족, 동료 등 함께 하고 싶은 사람과<br>
@@ -61,7 +61,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="/resources/images/intro2.jpg">
+                    <img src="/resources/images/common/intro2.jpg">
                     <div class="list-text">
                         <h3>모임에 딱 맞는 기능들</h3>
                         <p>투표로 의견을 모으고, 함께 일정을 공유하며<br>
@@ -69,7 +69,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="/resources/images/intro3.jpg">
+                    <img src="/resources/images/common/intro3.jpg">
                     <div class="list-text">
                         <h3>내가 원하는 모임 찾기</h3>
                         <p>취미, 스포츠, 또래 모임 등<br>

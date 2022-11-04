@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
 
-    <link rel="stylesheet" href="/resources/css/main-page.css">
+    <link rel="stylesheet" href="/resources/css/band/main-page.css">
     <script src="https://kit.fontawesome.com/345198b845.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -49,7 +49,7 @@
                 </li>
                 <li class="groupCardItem">
                     <a href="#">
-                        <img src="/resources/images/group1.jpg">
+                        <img src="/resources/images/band/group1.jpg">
                         <div class="groupInfo">
                             <p>KH 팀프로젝트</p>
                             <span>멤버 5</span>
@@ -58,7 +58,7 @@
                 </li>
                 <li class="groupCardItem">
                     <a href="#">
-                        <img src="/resources/images/group2.jpg">
+                        <img src="/resources/images/band/group2.jpg">
                         <div class="groupInfo">
                             <p>여행 가즈아</p>
                             <span>멤버 20</span>
@@ -67,7 +67,7 @@
                 </li>
                 <li class="groupCardItem">
                     <a href="#">
-                        <img src="/resources/images/group3.jpg">
+                        <img src="/resources/images/band/group3.jpg">
                         <div class="groupInfo">
                             <p>맛집 탐사대</p>
                             <span>멤버 10</span>

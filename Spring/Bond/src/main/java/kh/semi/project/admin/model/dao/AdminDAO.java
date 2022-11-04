@@ -6,9 +6,9 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import kh.semi.project.member.model.vo.Group;
+import kh.semi.project.band.model.vo.Group;
+import kh.semi.project.band.model.vo.Post;
 import kh.semi.project.member.model.vo.Member;
-import kh.semi.project.member.model.vo.Post;
 
 @Repository
 public class AdminDAO {

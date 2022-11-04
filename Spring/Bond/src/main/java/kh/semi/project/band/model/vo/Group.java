@@ -1,11 +1,14 @@
-package kh.semi.project.member.model.vo;
+package kh.semi.project.band.model.vo;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
 @Setter
 @NoArgsConstructor
 public class Group {
+
 	private int groupNo;
 	private int topicCode;
 	private String groupName;
@@ -14,4 +17,5 @@ public class Group {
 	private String groupComment;
 	private String openYN;
 	private String groupStatus;
+	
 }

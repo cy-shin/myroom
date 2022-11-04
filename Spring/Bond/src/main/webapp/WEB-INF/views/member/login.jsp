@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/resources/images/title-logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/resources/images/common/title-logo.jpg" type="image/x-icon">
     <title>본드 | 로그인</title>
-    <link rel="stylesheet" href="/resources/css/login.css">
+    <link rel="stylesheet" href="/resources/css/band/login.css">
 </head>
 <body>
     <div class="top-logo">
         <a href="/main">
-            <img src="/resources/images/home-logo.png" id="home-logo">
+            <img src="/resources/images/common/home-logo.png" id="home-logo">
         </a>
     </div>
     <main>

@@ -1,4 +1,4 @@
-package kh.semi.project.member.model.vo;
+package kh.semi.project.band.model.vo;
 
 import org.springframework.stereotype.Repository;
 
