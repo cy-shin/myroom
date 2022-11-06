@@ -1,0 +1,282 @@
+/* font & box-sizing */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* common-style */
+h6{
+    color: #BFBFBF;
+    font-weight: 400;
+}
+
+ul > li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* end common-style */
+
+
+/* body */
+body{ /* body의 최소 크기를 header보다 크게 */
+    min-width: 1300px; 
+}
+/* end body */
+
+/* header */
+header{
+    background-color: white;
+
+    width: 1140px;
+    height: 70px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home-logo{
+    width: 80px;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 70%;
+
+    justify-content: right;
+
+    overflow: hidden;
+}
+
+#profile-photo{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;  
+    cursor: pointer;
+}
+/* and header */
+
+/* background */
+main{ /* 배경색 및 flex */
+    background-color: #E2E2E2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end background */
+
+
+/* 진짜 main */
+.main{
+    height: 700px;
+
+    margin: 20px 0px;
+    
+    display: flex;
+}
+/* end .main */
+
+/* .content */
+.content{
+    background-color: white;
+
+    width: 920px;
+    
+    margin-left: 20px;
+    padding: 15px;
+    border-radius: 10px;
+
+    display:flex;
+    flex-direction: column;
+}
+/* end .content */
+
+
+/* .content-header */
+.content-header{
+    width: 100%;
+    height: 60px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* end .content-header */
+
+
+
+
+
+/* searchbar */
+
+/* end .searchbar */
+
+
+
+
+
+
+/* .content-body */
+.content-body{
+	display: flex;
+    justify-content: space-between;
+}
+
+/* 목록 버튼 */
+#list-btn{
+    color: black;
+    background-color: #bfbfbf21;
+    
+    font-size: 12px;
+    text-decoration: none;
+
+    margin: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    
+    width: 50px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+#list-btn:hover{
+    background-color: #bfbfbf31;
+}
+#list-btn:active{
+    background-color: #bfbfbf41;
+    color: black;
+}
+
+article{
+    width: 90%;
+}
+
+/* 제목, 날짜, 공개여부 */
+.notice-content-head{
+    border-bottom: 1px solid #E2E2E2;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.notice-title{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+/* 공개여부 */
+.notice-status{
+    font-size: 15px;
+    color:white;
+    background-color: dodgerblue;
+    border-radius: 7px;
+    
+    display:inline-block;
+    text-align: center;
+    width: 50px;
+    height: 21px;
+}
+
+/* 수정 / 삭제 버튼 */
+.notice-content-head > form{
+    display:inline-block;
+}
+
+.notice-content-head > form > button{
+    font-size: 15px;
+    color:white;
+    border: none;
+    border-radius: 7px;
+    
+    display:inline-block;
+    text-align: center;
+    width: 50px;
+    height: 21px;
+}
+
+/* 수정 버튼 */
+#noticeEdit > button { 
+    background-color: #BFBFBF;
+    cursor: pointer;
+}
+/* 삭제 버튼 */
+#noticeDel > button { 
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+.notice-content-head button:hover{
+    opacity: 0.9;
+    transition-duration: 0.1s;
+}
+
+.notice-content-head button:active{
+    opacity: 0.8;
+    transition-duration: 0.1s;
+}
+
+
+/* 본문 */
+.notice-content{
+    font-size: 17px;
+}
+
+/* end .content-body */
+
+
+
+/* content-footer */
+.content-footer{
+	display:flex;
+	justify-content: center;
+}
+/* footer */
+footer{
+    height: 200px;
+    background-color: #BFBFBF;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+footer > article > *{
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer span{
+    padding : 0 10px;
+}
+/* end footer */
