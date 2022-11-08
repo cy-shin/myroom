@@ -7,7 +7,7 @@
     <title>관리자 | 공지사항</title>
 
     <link rel="stylesheet" href="../../../resources/css/admin/layout-style.css">
-    <link rel="stylesheet" href="../../../resources/css/admin/notice-detail-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/post-detail-style.css">
     <link rel="stylesheet" href="../../../resources/css/admin/searchbar-style.css">
     <link rel="stylesheet" href="../../../resources/css/admin/sidebar-style.css">
     
@@ -70,43 +70,48 @@
 
             <section class="content">
                 <div class="content-header">
-                    <h6>공지사항 / 목록</h6>
-                    <h3>공지사항</h3>
+                    <h3>게시물 제목</h3>
                 </div>
                 
                 <div class="content-body">
-
-                    <a href="noticeList.html" id="list-btn">목록</a>
-                    <article>
-                        <div class="notice-content-head">
-                            <strong class="notice-title">개인정보는 누구에게도 알려주지 마세요.</strong>
-                            <span class="notice-date">2022년 10월 22일</span>
-                            <span class="notice-status">공개</span>
-                            <form action="#" id="noticeEdit">
-                                <button >수정</button>
-                            </form>
-                            <form action="#" id="noticeDel">
-                                <button>삭제</button>
-                            </form>
+                    <a href="noticeList.html" id="list-btn">
+                        <img src="go-back-list.png">
+                        목록
+                    </a>
+                    
+                    <div class="post-detail">
+                        <div class="title-area">
+                            <div class="postNo">50</div>
+                            <div class="groupNo">12345</div>
+                            <div class="groupName">여행모임</div>
+                            <div class="postDelYN">게시</div>
                         </div>
-                        <div class="notice-content">
-                            아이디, 비밀번호를 요구하지 않습니다.
-                            <br>
-                            아이디, 비밀번호를 요구하지 않습니다.
-                            <br>
-                        </div>
-                    </article>
 
+                        <div class="title-area">
+                            <div class="memberNo">1</div>
+                            <div class="memberName">김일일</div>
+                            <div class="postDate">2022-11-07</div>
+                        </div>
+
+                        <div class="content-area">
+                            <div class="postContent">내용이 들어갈 영역</div>
+                        </div>
+
+                        <div class="img-area">
+                            <div class="img-box"><img src="admin-no-images.png"></div>
+                            <div class="img-box"></div>
+                            <div class="img-box"></div>
+                            <div class="img-box"></div>
+                            <div class="img-box"></div>
+                        </div>
+                    </div>
                 </div>
 
 
+
             <div class="content-footer">
-            	<span>prev</span>
-            	<span>1</span>
-            	<span>2</span>
-            	<span>3</span>
-            	<span>next</span>
             </div>
+
             </section> <!-- admin-content end -->
         </section> <!-- main-content end -->
     </main>

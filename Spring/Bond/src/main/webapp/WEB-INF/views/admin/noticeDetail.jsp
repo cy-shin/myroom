@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 | 공지사항</title>
 
-    <link rel="stylesheet" href="/resources/css/admin/layout-style.css">
-    <link rel="stylesheet" href="/resources/css/admin/notice-list-style.css">
-    <link rel="stylesheet" href="/resources/css/admin/searchbar-style.css">
-    <link rel="stylesheet" href="/resources/css/admin/sidebar-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/layout-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/notice-detail-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/searchbar-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/sidebar-style.css">
     
 </head>
 <body>
@@ -27,46 +27,35 @@
             
 	<jsp:include page="/WEB-INF/views/admin/sidebar.jsp" />
 
-
             <section class="content">
                 <div class="content-header">
-                    <h6>공지사항 / 목록</h6>
                     <h3>공지사항</h3>
                 </div>
                 
                 <div class="content-body">
+                    <a href="noticeList.html" id="list-btn">
+                        <img src="go-back-list.png">
+                        목록
+                    </a>
                     
-                    <div class="list-header">
-                        <span class="noticeNo">번호</span>
-                        <span class="noticeDate">작성일</span>
-                        <span class="noticeTitle">제목</span>
-                        <span class="noticeContent">내용</span>
-                        <span class="noticeStatus">상태</span>
+                    <div class="notice-detail">
+                        <h3 id="noticeTitle">개인정보는 누구에게도 알려주지 마세요.</h3>
+                        <span id="noticeDate">2022년 10월 22일</span>
+                        <span id="noticeStatus">공개</span>
+                        <form action="#" id="noticeEdit">
+                            <button >수정</button>
+                        </form>
+                        <form action="#" id="noticeDel">
+                            <button>삭제</button>
+                        </form>
+                        <p>
+                            아이디, 비밀번호를 요구하지 않습니다.
+                            내용을 적는 곳입니다. 내용을 적어주세요.
+                        </p>
                     </div>
-					
-					<!-- 목록 불러오기 반복문 -->
-                    <c:forEach var="notice" items="${noticeList}">
-                    <form action="/printNoticeList" class="list-frm" method="GET">
-                        <button class="list-btn">
-                            <span class="noticeNo">${notice.noticeNo}</span>
-                            <span class="noticeDate">${notice.noticeDate}</span>
-                            <span class="noticeTitle">${notice.noticeTitle}</span>
-                            <span class="noticeContent">${notice.noticeContent}</span>
-                            <span class="noticeStatus">${notice.noticeStatus}</span>
-                        </button>
-                    </form>
-					</c:forEach>
-					
+
                 </div>
 
-
-            <div class="content-footer">
-            	<span>prev</span>
-            	<span>1</span>
-            	<span>2</span>
-            	<span>3</span>
-            	<span>next</span>
-            </div>
             </section> <!-- admin-content end -->
         </section> <!-- main-content end -->
     </main>

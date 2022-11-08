@@ -17,10 +17,10 @@ import kh.semi.project.member.model.vo.Member;
 public class MainController {
 	
 	// 메인화면(로그인 전 화면)으로 이동
-	@GetMapping("/")
-	public String main() {
-		return "redirect:/index/main";
-	}
+//	@GetMapping("/")
+//	public String main() {
+//		return "redirect:/index/main";
+//	}
 	
 
 }

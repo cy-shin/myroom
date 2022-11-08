@@ -1,231 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자 페이지 | 공지사항 </title>
+    <title>관리자 | 공지사항</title>
 
-    <link rel="stylesheet" href="resources/css/adminPage-style.css">
-    <link rel="stylesheet" href="resources/css/contentHeader-list-style.css">
-    <link rel="stylesheet" href="resources/css/noticeDetail-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/layout-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/notice-detail-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/searchbar-style.css">
+    <link rel="stylesheet" href="../../../resources/css/admin/sidebar-style.css">
+    
 </head>
 <body>
+
+    <!-- <jsp:include page="/WEB-INF/views/common/header.jsp" /> -->
     <header>
         <section>
             <!-- 클릭 시 메인으로 이동하는 로고  -->
             <a href="#">
-                <img src="resources/images/home-logo.png" id="home-logo">
+                <img src="/resources/images/common/home-logo.png" id="home-logo">
             </a>
         </section>
-
+    
         <section class="profile">
             <!-- 내 정보 사진 -->
             <button type="button" class="box">
-                <img src="resources/images/admin-profile-icon.png" id="profile-photo">
+                <img src="/resources/images/common/profile-icon.png" id="profile-photo">
             </button>
         </section>
     </header>
 
+    <main> <!-- for background-color -->
 
-    <main>
-        <section class="main">
+        <section class="main"> 
             
-            <!-- 사이드 메뉴 -->
-            <aside>
-                <!-- 프로필, 밴드로 이동, 로그아웃 -->
-                <section class="admin-profile">
-                    <div class="admin-logo">
-                        <div class="admin-logo-area">
-                            <img id="admin-logo-img" src="resources/images/admin-profile-icon.png">
-                        </div>
-                    </div>
-                    <div class="admin-name">
-                        <span>관리자1</span>
-                    </div>
-                    <div class="admin-quickmenu">
-                        <a href="#" id="home"><div>밴드 홈</div></a>
-                        <a href="#" id="logout"><div>로그아웃</div></a>
-                    </div>
-                </section>
-            
-                <!-- 메뉴 리스트 -->
-                <nav>
+	<!-- <jsp:include page="/WEB-INF/views/admin/sidebar.jsp" /> -->
+    <aside class="sidebar">
 
-                    <!-- css버전 -->
-                    <!-- <label for="menu0">
-                        <div class="top-menu">메뉴 이름
-                            <div class="top-menu-icon">
-                                <img src="사진 경로">
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" name="menu" id="menu0">
-                    <ul>
-                        <li class="sub-menu"><a href="#">서브메뉴 1</a></li>
-                        <li class="sub-menu"><a href="#">서브메뉴 2</a></li>
-                        <li class="sub-menu"><a href="#">서브메뉴 3</a></li>
-                    </ul> -->
-                    <!-- css버전 끝 -->
-
-                    <!-- 자바스크립트 버전 -->
-                    <!-- <button class="top-menu">
-                        <div class="top-menu-special">통계
-                        </div>
-                    </button>
-                    <div class="dropdown-container">
-                        <a href="#" class="sub-menu">서브메뉴 1</a>
-                        <a href="#" class="sub-menu">서브메뉴 2</a>
-                        <a href="#" class="sub-menu">서브메뉴 3</a>
-                    </div> -->
-                    <!-- 자바스크립트 버전 끝 -->
-
-                    <button class="top-menu-btn">
-                        <div class="top-menu-item">
-                            <img src="resources/images/admin-page-icon.png">
-                            <span>|</span>
-                            <div>커뮤니티</div>
-                        </div>
-                    </button>
-                    <div class="dropdown-container">
-                        <a href="noticeList.html" class="sub-menu"> - 공지사항</a>
-                    </div>
-                    <button class="top-menu-btn">
-                        <div class="top-menu-item">
-                            <img src="resources/images/admin-member-icon.png">
-                            <span>|</span>
-                            <div>사용자</div>
-                        </div>
-                    </button>
-                    <div class="dropdown-container">
-                        <a href="memberManage.html" class="sub-menu"> - 사용자 관리</a>
-                        <a href="memberReport.html" class="sub-menu"> - 신고 내역</a>
-                    </div>
-                    <button class="top-menu-btn">
-                        <div class="top-menu-item">
-                            <img src="resources/images/admin-group-icon.png">
-                            <span>|</span>
-                            <div>소모임</div>
-                        </div>
-                    </button>
-                    <div class="dropdown-container">
-                        <a href="groupManage.html" class="sub-menu"> - 소모임 관리</a>
-                        <a href="groupReport.html" class="sub-menu"> - 신고 내역</a>
-                    </div>
-                    <button class="top-menu-btn">
-                        <div class="top-menu-item">
-                            <img src="resources/images/admin-analytics-icon.png">
-                            <span>|</span>
-                            <div>분석 / 통계</div>
-                        </div>
-                    </button>
-                    <div class="dropdown-container">
-                        <a href="statistics.html" class="sub-menu"> - 통계</a>
-                    </div>
-                    
-                </nav>
-
-            </aside>
+        <article class="admin-info"> <!-- admin-info  -->
+            <div class="info-image-area">
+                <img id="info-image" src="/resources/images/admin-profile-icon.png">
+            </div>
+            <span>관리자1</span>
+            <div class="profile-btn-area">
+                <a href="#" id="home">밴드 홈</a>
+                <a href="/logout" id="logout">로그아웃</a>
+            </div>
+        </article> <!-- admin-profile end -->
         
-            <!-- 본문 -->
-            <section class="admin-content">
-                <section class="content-header">
-                    <h6>커뮤니티 - 공지사항</h6>
-                    <h3>공지사항</h3>
-                    <!-- 검색 개수 필터 -->
-                </section>
-                <section class="content-main">
-                    <a href="noticeList.html" id="noticeList">목록</a>
-                    <article>
-                        <div class="notice-content-head">
-                            <strong class="notice-title">개인정보는 누구에게도 알려주지 마세요.</strong>
-                            <span class="notice-date">2022년 10월 22일</span>
-                            <span class="notice-status">공개</span>
-                            <form action="#" id="noticeEdit">
-                                <button >수정</button>
-                            </form>
-                            <form action="#" id="noticeDel">
-                                <button>삭제</button>
-                            </form>
-                        </div>
-                        <div class="notice-content">
-                            아이디, 비밀번호를 요구하지 않습니다.
-                        </div>
-                    </article>
+        <nav class="admin-menu">
+            <ul>
+                <a href="#">공지사항</a>
+            </ul>
+                
+            <ul> 밴드 관리
+                <li><a href="/admin/memberList">- 회원</a></li>
+                <li><a href="/admin/groupList">- 소모임</a></li>
+                <li><a href="/admin/postList">- 게시글</a></li>
+            </ul>
+    
+            <ul>
+                <a href="#">신고</a>
+            </ul>
+    
+        </nav>
+        
+    </aside>
 
-                </section>
-                    <!-- 검색 개수 필터 -->
-                <!-- 반복문 종료 -->
-                </section> <!-- content-main end -->
+            <section class="content">
+                <div class="content-header">
+                    <h3>공지사항</h3>
+                </div>
+                
+                <div class="content-body">
+                    <a href="noticeList.html" id="list-btn">
+                        <img src="go-back-list.png">
+                        목록
+                    </a>
+                    
+                    <div class="notice-detail">
+                        <h3 id="noticeTitle">개인정보는 누구에게도 알려주지 마세요.</h3>
+                        <span id="noticeDate">2022년 10월 22일</span>
+                        <span id="noticeStatus">공개</span>
+                        <form action="#" id="noticeEdit">
+                            <button >수정</button>
+                        </form>
+                        <form action="#" id="noticeDel">
+                            <button>삭제</button>
+                        </form>
+                        <p>
+                            아이디, 비밀번호를 요구하지 않습니다.
+                            내용을 적는 곳입니다.
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            <div class="content-footer">
+            </div>
+
             </section> <!-- admin-content end -->
-        </section> <!-- .main end -->
+        </section> <!-- main-content end -->
     </main>
 
-
-    <footer>
-        <p>
-            BOND &copy; 2022
-        </p>
-
-        <article>
-            <a href="#">블로그</a>
-            <span>|</span>
-            <a href="#">이용약관</a>
-            <span>|</span>
-            <a href="#">개인정보처리방침</a>
-            <span>|</span>
-            <a href="#">고객센터</a>
-        </article>
-
-    </footer>
-
-
-    <script>
-        // function chkMenu(target) {
-        //     const checkboxes = document.querySelectorAll(`input[type=checkbox]`)
-        //     checkboxes.forEach(el => el.checked = false);
-        //     target.checked = true;
-
-        //     if(target.checked){
-        //         topMenu.style.background="white";
-        //     }
-        //     if(!target.checked){
-        //         topMenu.style.background="#E2E2E2";
-        //     }
-        // }
-
-        // -------------------------------------------------------------------
-
-        function chkMenu(target) {
-                    const checkboxes = document.querySelectorAll(`input[type=checkbox]`)
-                    checkboxes.forEach(el => el.checked = false);
-                    target.active = true;
-
-                    if(target.checked){
-                        topMenu.style.background="white";
-                    }
-                    if(!target.checked){
-                        topMenu.style.background="#E2E2E2";
-                    }
-                }
-
-        var dropdown = document.getElementsByClassName("top-menu-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }       
-            });
-        }
-        
-        // 왜 반대로 될까
-    </script>
     
+<footer>
+	<p>
+	    BOND &copy; 2022
+	</p>
+	
+	<article>
+	    <a href="#">블로그</a>
+	    <span>|</span>
+	    <a href="#">이용약관</a>
+	    <span>|</span>
+	    <a href="#">개인정보처리방침</a>
+	    <span>|</span>
+	    <a href="#">고객센터</a>
+	</article>
+</footer>
+
+	<!-- <jsp:include page="/WEB-INF/views/common/footer.jsp" /> -->
+	
+    <script src="/resources/js/sidebar.js"></script>
 </body>
 </html>

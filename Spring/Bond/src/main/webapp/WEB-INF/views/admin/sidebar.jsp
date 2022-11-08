@@ -17,7 +17,7 @@
     
     <nav class="admin-menu">
         <ul>
-            <a href="#">공지사항</a>
+            <a href="/admin/noticeList">공지사항</a>
         </ul>
             
         <ul> 밴드 관리
