@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 | 공지사항</title>
 
-    <link rel="stylesheet" href="../../../resources/css/admin/layout-style.css">
-    <link rel="stylesheet" href="../../../resources/css/admin/notice-detail-style.css">
-    <link rel="stylesheet" href="../../../resources/css/admin/searchbar-style.css">
-    <link rel="stylesheet" href="../../../resources/css/admin/sidebar-style.css">
+    <link rel="stylesheet" href="/resources/css/admin/layout-style.css">
+    <link rel="stylesheet" href="/resources/css/admin/notice-detail-style.css">
+    <link rel="stylesheet" href="/resources/css/admin/searchbar-style.css">
+    <link rel="stylesheet" href="/resources/css/admin/sidebar-style.css">
     
 </head>
 <body>
