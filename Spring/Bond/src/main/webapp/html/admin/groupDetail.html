@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 | 모임 관리</title>
 
-    <link rel="stylesheet" href="../../../resources/css/admin/layout-style.css">
-    <link rel="stylesheet" href="../../../resources/css/admin/group-detail-style.css">
-    <link rel="stylesheet" href="../../../resources/css/admin/searchbar-style.css">
-    <link rel="stylesheet" href="../../../resources/css/admin/sidebar-style.css">
+    <link rel="stylesheet" href="../../resources/css/admin/layout-style.css">
+    <link rel="stylesheet" href="../../resources/css/admin/group-detail-style.css">
+    <link rel="stylesheet" href="../../resources/css/admin/searchbar-style.css">
+    <link rel="stylesheet" href="../../resources/css/admin/sidebar-style.css">
     
 </head>
 <body>
@@ -159,7 +159,7 @@
                                 <span class="circle"></span>
                                 <span class="circle"></span>
                                 <span class="circle"></span>
-                                <button class="additional-btn">조회</button>
+                                <button id="report-open-btn">조회</button>
                             </div>
                         </div>
                     </div>
@@ -184,7 +184,37 @@
             <a href="#">고객센터</a>
         </article>
     </footer>
+    
+    
+    
+    <div id="dim">
+        <div id="report-modal">
+            <span id="close-btn">&times;</span>
+            <h3>신고 기록</h3>
+            <div class="report-modal-row">
+                <span class="report-no">신고번호</span>
+                <span class="report-request">신고자</span>
+                <span class="report-reason">신고사유</span>
+                <span class="report-result">처리결과</span>
+            </div>
+            <div class="report-modal-row">
+                <span class="report-no">1</span>
+                <span class="report-request">2</span>
+                <span class="report-reason">3</span>
+                <span class="report-result">4</span>
+            </div>
+            <div class="report-modal-row">
+                <span class="report-no">1</span>
+                <span class="report-request">2</span>
+                <span class="report-reason">3</span>
+                <span class="report-result">4</span>
+            </div>
+        </div>
+    </div>
+    <!-- <button id="clickTest">클릭확인</button> -->
+
+
 	
-    <script src="/resources/js/sidebar.js"></script>
+    <script src="../../resources/js/admin/groupDetail.js"></script>
 </body>
 </html>
