@@ -24,3 +24,5 @@ closeModal.addEventListener("click", () => {
     modalDim.style.display="none";
     body.style.overflow="visible";
 })
+
+

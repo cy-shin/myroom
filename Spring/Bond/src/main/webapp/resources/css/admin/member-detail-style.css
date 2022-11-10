@@ -116,10 +116,9 @@
 }
 
 /* 모달 버튼 */
-.additional-btn{
+#openModal{
     border: none;
     border-radius: 10px;
-    margin-right: 20px;
     background-color: #E2E2E250;
     height: 35px;
     width: 45px;
@@ -127,14 +126,93 @@
     cursor: pointer;
 }
 
-.additional-btn:hover{
+#openModal:hover{
     opacity: 0.7;
 }
 
-.additional-btn:active{
+#openModal:active{
     opacity: 0.5;
 }
 
+/* body{
+    position: relative;
+
+    margin: 0;
+    margin: auto;
+} */
+
+/* end .content-body */
+body{
+    position: relative;
+}
+
+#modalDim{
+    background-color: rgb(0,0,0,0.8);
+    width: 100vw;
+    height: 100vmax;
+    
+    position: absolute;
+    top: 0;
+}
+
+#modalBox{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    position: relative;
+    
+    z-index: 15000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#modal{
+    background-color: white;
+    
+    width: 500px;
+
+    position: absolute;
+    z-index: 20000;
+    position: relative;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#closeModal{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.report-modal-row{
+    font-size: 12px;
+
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #E2E2E2;
+    display: flex;
+}
+
+.report-no{ flex-basis : 20% }
+.report-request{ flex-basis : 20%}
+.report-reason{ flex-basis : 50%}
+.report-result{ flex-basis : 20%}
+
+/* modal 내 표 */
+.report-modal-row > span{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.report-modal-row:first-of-type{
+    background-color: #CCC;
+}
 
 /* end .content-body */
 
