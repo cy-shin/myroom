@@ -146,11 +146,13 @@ main{ /* 배경색 및 flex */
     margin-top: 10px;
 }
 
-.noticeNo{ flex-basis: 15%; }
-.noticeDate{ flex-basis: 15%; }
-.noticeTitle{ flex-basis: 30%;}
-.noticeContent{ flex-basis: 30%;}
-.noticeStatus{ flex-basis: 10%;}
+.reportNo{ flex-basis: 10%; }
+.reportType{ flex-basis: 10%; }
+.memberName{ flex-basis: 25%; }
+.targetName{ flex-basis: 25%; }
+.reportDate{ flex-basis: 10%; }
+.processYN{ flex-basis: 10%; }
+.processDate{ flex-basis: 10%; }
 
 .list-btn{
     margin-top: 10px;

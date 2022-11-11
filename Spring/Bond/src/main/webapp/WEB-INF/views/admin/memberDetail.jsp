@@ -38,61 +38,61 @@
                         목록
                     </a>
                     
-                    <div class="member-info">
-                        <div class="member-info-row">
+                    <div class="detail-info">
+                        <div class="detail-info-row">
                             <label>회원 번호</label>
-                            <div class="member-info-col">01</div>
+                            <div class="detail-info-col">01</div>
                         </div>
-                        <div class="member-info-row">
+                        <div class="detail-info-row">
                             <label>회원 이메일</label>
-                            <div class="member-info-col">one@kosaran</div>
+                            <div class="detail-info-col">one@kosaran</div>
                         </div>
-                        <div class="member-info-row">
+                        <div class=detailr-info-row">
                             <label>회원 이름</label>
-                            <div class="member-info-col">김철수</div>
+                            <div class="detail-info-col">김철수</div>
                         </div>
-                        <div class="member-info-row">
+                        <div class="detail-info-row">
                             <label>기본 프로필</label>
-                            <div class="member-info-col">
+                            <div class="detail-info-col">
                                 <img id="memberImage" src="../../../resources/images/admin-group-icon.png">
                             </div>
                         </div>
-                        <div class="member-info-row">
+                        <div class="detail-info-row">
                             <label>회원 전화번호</label>
-                            <div class="member-info-col">010-****-****</div>
+                            <div class="detail-info-col">010-****-****</div>
                         </div>
-                        <div class="member-info-row">
+                        <div class="detail-info-row">
                             <label>회원 생일</label>
-                            <div class="member-info-col">1990-11-09</div>
+                            <div class="detail-info-col">1990-11-09</div>
                         </div>
-                        <div class="member-info-row">
+                        <div class="detail-info-row">
                             <label>회원 상태</label>
-                            <div class="member-info-col">정상</div>
+                            <div class="detail-info-col">정상</div>
                         </div>
-                        <div class="member-info-row">
+                        <div class="detail-info-row">
                             <label>가입일</label>
-                            <div class="member-info-col">2022-10-01</div>
+                            <div class="detail-info-col">2022-10-01</div>
                         </div>
-                        <div class="member-info-row">
+                        <div class="detail-info-row">
                             <label>탈퇴일</label>
-                            <div class="member-info-col">-</div>
+                            <div class="detail-info-col">-</div>
                         </div>
                     </div>
 
-                    <div class="member-info">    
-                        <div class="member-info-row">
+                    <div class="detail-info">    
+                        <div class="detail-info-row">
                             <label>정지 기록</label>
-                            <div class="member-info-col">
+                            <div class="detail-info-col">
                                 <span class="report-count">13545회</span>
                                 <button class="additional-btn">조회</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="member-info">
-                        <div class="member-info-row">
+                    <div class="detail-info">
+                        <div class="detail-info-row">
                             <label>모임 프로필</label>
-                            <div class="member-info-col">
+                            <div class="detail-info-col">
                                 <span class="join-count">3개</span>
                                 <button class="additional-btn">조회</button>
                             </div>
@@ -107,6 +107,34 @@
 
 	<jsp:include page="/WEB-INF/views/common/footer.jsp" />
 
-    <script src="/resources/js/sidebar.js"></script>
+    <div id="modalDim">
+        <div id="modalBox">
+            <div id="modal">
+                <div id="closeModal">&times;</div>
+                <h3>신고 기록</h3>
+                <div class="report-modal-row">
+                    <span class="report-no">신고번호</span>
+                    <span class="report-request">신고자</span>
+                    <span class="report-reason">신고사유</span>
+                    <span class="report-result">처리결과</span>
+                </div>
+                <div class="report-modal-row">
+                    <span class="report-no">1</span>
+                    <span class="report-request">2</span>
+                    <span class="report-reason">3</span>
+                    <span class="report-result">4</span>
+                </div>
+                <div class="report-modal-row">
+                    <span class="report-no">1</span>
+                    <span class="report-request">2</span>
+                    <span class="report-reason">3</span>
+                    <span class="report-result">4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/resources/js/admin/memberDetail.js"></script>
+    <script src="/resources/js/admin/sidebar.js"></script>
 </body>
 </html>

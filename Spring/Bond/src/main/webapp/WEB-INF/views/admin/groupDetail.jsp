@@ -39,55 +39,55 @@
                         목록
                     </a>
                     
-                    <div class="group-info">
-                        <div class="group-info-row">
+                    <div class="detail-info">
+                        <div class="detail-info-row">
                             <label>모임 번호</label>
-                            <div class="group-info-col">01</div>
+                            <div class="detail-info-col">01</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>모임 이름</label>
-                            <div class="group-info-col">스터디 소모임</div>
+                            <div class="detail-info-col">스터디 소모임</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>모임 주제</label>
-                            <div class="group-info-col">자기개발</div>
+                            <div class="detail-info-col">자기개발</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>모임 이미지</label>
-                            <div class="group-info-col">
+                            <div class="detail-info-col">
                                 <img id="groupImage" src="../../../resources/images/admin-group-icon.png">
                             </div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>모임 리더</label>
-                            <div class="group-info-col">김철수</div>
+                            <div class="detail-info-col">김철수</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>모임 개설일</label>
-                            <div class="group-info-col">2022-11-09</div>
+                            <div class="detail-info-col">2022-11-09</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>회원 수</label>
-                            <div class="group-info-col">127명</div>
+                            <div class="detail-info-col">127명</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class=detail-info-row">
                             <label>게시글 수</label>
-                            <div class="group-info-col">502개</div>
+                            <div class="detail-info-col">502개</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>모임 공개 여부</label>
-                            <div class="group-info-col">공개</div>
+                            <div class="detail-info-col">공개</div>
                         </div>
-                        <div class="group-info-row">
+                        <div class="detail-info-row">
                             <label>모임 상태</label>
-                            <div class="group-info-col">정지</div>
+                            <div class="detail-info-col">정지</div>
                         </div>
                     </div>
 
-                    <div class="group-info">    
-                        <div class="group-info-row">
+                    <div class="detail-info">    
+                        <div class="detail-info-row">
                             <label>모임 소개글</label>
-                            <div class="group-info-col">
+                            <div class="detail-info-col">
                                 안녕하세요. 자기개발 소모임입니다.
                                 높이 확인중입니다.
                                 동해 물과 백두산이 마르고 닳도록
@@ -113,10 +113,10 @@
                         </div>
                     </div>
 
-                    <div class="group-info">    
-                        <div class="group-info-row">
+                    <div class="detail-info">    
+                        <div class="detail-info-row">
                             <label>정지 기록</label>
-                            <div class="group-info-col">
+                            <div class=detailp-info-col">
                                 <span class="report-count">
                                     3회
                                 </span>
@@ -131,7 +131,35 @@
     </main>
 
 	<jsp:include page="/WEB-INF/views/common/footer.jsp" />
+
+    <div id="modalDim">
+        <div id="modalBox">
+            <div id="modal">
+                <div id="closeModal">&times;</div>
+                <h3>신고 기록</h3>
+                <div class="report-modal-row">
+                    <span class="report-no">신고번호</span>
+                    <span class="report-request">신고자</span>
+                    <span class="report-reason">신고사유</span>
+                    <span class="report-result">처리결과</span>
+                </div>
+                <div class="report-modal-row">
+                    <span class="report-no">1</span>
+                    <span class="report-request">2</span>
+                    <span class="report-reason">3</span>
+                    <span class="report-result">4</span>
+                </div>
+                <div class="report-modal-row">
+                    <span class="report-no">1</span>
+                    <span class="report-request">2</span>
+                    <span class="report-reason">3</span>
+                    <span class="report-result">4</span>
+                </div>
+            </div>
+        </div>
+    </div>    
 	
-    <script src="/resources/js/sidebar.js"></script>
+    <script src="/resources/js/admin/groupDetail.js"></script>
+    <script src="/resources/js/admin/sidebar.js"></script>
 </body>
 </html>

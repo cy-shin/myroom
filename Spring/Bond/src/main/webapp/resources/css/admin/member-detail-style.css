@@ -57,14 +57,14 @@
 }
 
 /* 전체 */
-.member-info{
+.detail-info{
     float: right;
     width: 650px;
     margin-bottom: 20px;
 }
 
 /* 행 */
-.member-info-row{
+.detail-info-row{
     border-top: 1px solid #BFBFBF;
     width: 650px;
     height: 100%;
@@ -75,12 +75,12 @@
 }
 
 
-.member-info-row:last-child{
+.detail-info-row:last-child{
     border-bottom: 1px solid #BFBFBF;
 }
 
 /* 라벨 */
-.member-info-row > label{
+.detail-info-row > label{
     font-weight: 800;
     
     padding-left: 10px;
@@ -92,7 +92,7 @@
 }
 
 /* 라벨이 아닌 열 */
-.member-info-col{
+.detail-info-col{
     display: flex;
     align-items: center;
     padding: 0px 20px;
@@ -134,14 +134,7 @@
     opacity: 0.5;
 }
 
-/* body{
-    position: relative;
-
-    margin: 0;
-    margin: auto;
-} */
-
-/* end .content-body */
+/* 모달창 */
 body{
     position: relative;
 }

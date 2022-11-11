@@ -96,20 +96,30 @@
     display: flex;
     align-items: center;
     padding: 0px 20px;
-    width: 100%;
+    width: 500px;
     background-color: white;
     height: 100%;
     min-height: 50px;
 }
 
-#groupImage{
+.detail-info-col2{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: 175px;
+    background-color: white;
+    height: 100%;
+    min-height: 50px;
+}
+
+#memberImage{
     width: 100px;
     height: 100px;
     cursor: pointer;
 }
 
 /* join count */
-.report-count{
+.report-count, .join-count{
     min-width: 85%;
     margin-right: 5px;
     display: flex;
@@ -134,6 +144,7 @@
     opacity: 0.5;
 }
 
+
 /* 모달창 */
 body{
     position: relative;
@@ -154,6 +165,7 @@ body{
     position: fixed;
     position: relative;
     
+    z-index: 15000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +191,6 @@ body{
     position: absolute;
     right: 10px;
     top: 0px;
-
     cursor: pointer;
 }
 
@@ -207,3 +218,17 @@ body{
 .report-modal-row:first-of-type{
     background-color: #CCC;
 }
+
+#resultSelect{
+    height: 30px;
+}
+
+#resultBtn{
+    height: 30px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+/* end .content-body */
+
+
