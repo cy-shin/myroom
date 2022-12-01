@@ -21,13 +21,19 @@ public class AdminController {
 	@Autowired
 	private AdminService service;
 
-	/** 회원 리스트 페이지로 이동
-	 * @return
-	 */
+	
 	@GetMapping("/")
-	public String tempMain() {
-		return "/admin/postDetail";
+	public String main() {
+		return "plan/plan";
 	}
+	
+//	/** 회원 리스트 페이지로 이동
+//	 * @return
+//	 */
+//	@GetMapping("/")
+//	public String tempMain() {
+//		return "/admin/postDetail";
+//	}
 	@GetMapping("/admin/memberList")
 	public String goMemberList() {
 		return "/admin/memberList";
